@@ -1,92 +1,145 @@
 /* @import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723'); */
-@import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
-          
-
- /* @font-face {
+@import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+/* @font-face {
     font-family: 'Graphik';
     src: url(http://fonts.cdnfonts.com/css/graphik);
 } */
-
 * {
-    /* color: #1a1a20; */
-    /* font-family: 'Averta-Regular', sans-serif; */
-    /* font-family: 'Averta-BlackItalic', sans-serif; */
-    font-family: 'Averta-Regular', sans-serif;
-
+  /* color: #1a1a20; */
+  /* font-family: 'Averta-Regular', sans-serif; */
+  /* font-family: 'Averta-BlackItalic', sans-serif; */
+  font-family: 'Averta-Regular', sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 p {
-    color: rgb(102, 101, 101);
+  color: #666565;
 }
+
 .hero {
-    background-image: url(../images/index-images/hero-bg.svg); 
-    padding: 50px 300px 350px;
-    
+  background-image: url(../images/index-images/hero-bg.svg);
+  background-size: cover;
+  padding: 68px 300px 350px;
 }
 
 .hero h1 {
-    font-size: 33px;
-    font-weight: 700;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-.hero p {
-    padding: 0px 40px;
-    /* color: rgb(102, 101, 101); */
+  font-size: 33px;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .hero span a {
-    color: red;
+  color: red;
 }
 
 .hero span a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .hero .buttons {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
-.hero .buttons a button {
-    padding: 10px 20px;
-    margin: 0px 20px;
-    
+.hero .buttons button {
+  padding: 10px 20px;
+  margin: 0px 20px;
 }
 
-.hero .buttons a .button1 {
-    background-color: red;
-    color: white;
-    border: 1px solid transparent;
+.hero .buttons .button1 {
+  background-color: red;
+  color: white;
+  border: 1px solid transparent;
 }
 
-.hero .buttons a .button1:hover {
-    background-color: white;
-    color: red;
-    border: 1px solid red;
+.hero .buttons .button1:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
 }
 
-.hero .buttons a .button2 {
-    background-color: white;
-    color: red;
-    border: 1px solid red;
+.hero .buttons .button2 {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
 }
 
-.hero .buttons a .button2:hover {
-    background-color: red;
-    color: white;
-    border: 1px solid red;
+.hero .buttons .button2:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
 }
 
+.team {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.team h5 {
+  color: red;
+  font-size: 15px;
+}
+
+.team h3 {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.team .zuris {
+  margin-top: 50px;
+  padding: 10px 50px;
+}
+
+.team .zuris .zuri {
+  background-color: #fffafa;
+  padding: 50px 50px;
+  margin-left: 30px;
+}
+
+.team .zuris .zuri a {
+  text-decoration: none;
+  color: red;
+}
+
+.team .zuris .zuri a:hover {
+  text-decoration: none;
+}
+
+.team .zuris .zuri .p1 {
+  margin-top: 70px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+  margin: 220px 30px 60px 30px;
+  /* padding: 0px; */
+}
+
+footer .top {
+  margin-bottom: 70px;
+}
+
+footer .top a {
+  color: red;
+}
+
+footer .top a:hover {
+  text-decoration: none;
+}
+
+footer .top .socials img {
+  width: 7%;
+  margin-right: 10px;
+}
+
+footer .copyright hr {
+  border-width: 2px;
+}
+/*# sourceMappingURL=style.css.map */

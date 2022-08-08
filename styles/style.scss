@@ -1,0 +1,161 @@
+/* @import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723'); */
+@import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
+@import './variables&mixins';
+          
+
+ /* @font-face {
+    font-family: 'Graphik';
+    src: url(http://fonts.cdnfonts.com/css/graphik);
+} */
+
+* {
+    /* color: #1a1a20; */
+    /* font-family: 'Averta-Regular', sans-serif; */
+    /* font-family: 'Averta-BlackItalic', sans-serif; */
+    font-family: 'Averta-Regular', sans-serif;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+p {
+    color: rgb(102, 101, 101);
+}
+
+.hero {
+    background-image: url(../images/index-images/hero-bg.svg); 
+    background-size: cover;
+    padding: 68px 300px 350px;
+
+    h1 {
+        font-size: 33px;
+        font-weight: 700;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+ 
+    span a {
+        color: $red;
+    }
+
+    span a:hover {
+        text-decoration: none;
+    }
+
+    .buttons {
+        padding-top: 70px;
+
+        button {
+            padding: 10px 20px;
+            margin: 0px 20px;
+            
+        }
+
+        .button1 {
+            background-color: $red;
+            color: white;
+            border: 1px solid transparent;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: $red;
+            border: 1px solid $red;
+        }
+
+        .button2 {
+            background-color: white;
+            color: $red;
+            border: 1px solid $red;
+        }
+
+        .button2:hover {
+            background-color: $red;
+            color: white;
+            border: 1px solid $red;
+        }
+    }
+} 
+
+// TEAM SECTION
+.team {
+    background-color: #fff;
+    padding-top: 50px;
+
+    h5 {
+        color: $red;
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .zuris {
+        margin-top: 50px;
+        padding: 10px 50px;
+        .zuri {
+            background-color: $pinkish ;
+            padding: 50px 50px;
+            margin-left: 30px;
+
+
+            a {
+                text-decoration: none;
+                color: $red;
+            }
+            
+            a:hover {
+                text-decoration: none;
+            }
+
+            .p1 {
+                margin-top: 70px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+/* FOOTER */
+footer {
+    margin: 220px 30px 60px 30px;
+    /* padding: 0px; */
+
+    .top {
+        margin-bottom: 70px;
+
+        a {
+            color: $red;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        .socials {
+            img {
+                width: 7%;
+                margin-right: 10px
+            }
+        }
+    }
+
+    .copyright {
+        hr {
+            border-width: 2px;
+        }
+    }
+}
+
+
+
+
