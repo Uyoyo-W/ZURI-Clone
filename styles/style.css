@@ -1,9 +1,82 @@
-body {
-    padding: 0;
-    margin: 0;
+@import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723');
+          
+
+ /* @font-face {
+    font-family: 'Graphik';
+    src: url(http://fonts.cdnfonts.com/css/graphik);
+} */
+
+* {
+    /* color: #1a1a20; */
+    font-family: 'Averta-Regular', sans-serif;
     box-sizing: border-box;
+
 }
 
+a {
+    text-decoration: none;
+}
+
+
+p {
+    color: rgb(102, 101, 101);
+}
 .hero {
-    background-image: url(./images/index-images/hero-bg.svg);
+    background-image: url(/images/index-images/hero-bg.svg); 
+    padding: 50px 300px 180px;
+    
+}
+
+.hero h1 {
+    font-size: 33px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.hero p {
+    padding: 0px 40px;
+    /* color: rgb(102, 101, 101); */
+}
+
+.hero span a {
+    color: red;
+}
+
+.hero span a:hover {
+    text-decoration: none;
+}
+
+.hero .buttons {
+    padding-top: 70px;
+}
+
+.hero .buttons a button {
+    padding: 10px 20px;
+    margin: 0px 20px;
+    
+}
+
+.hero .buttons a .button1 {
+    background-color: red;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.hero .buttons a .button1:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.hero .buttons a .button2 {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.hero .buttons a .button2:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
 }
