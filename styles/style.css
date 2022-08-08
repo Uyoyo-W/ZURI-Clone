@@ -1,4 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723');
+/* @import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723'); */
+@import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
           
 
  /* @font-face {
@@ -8,7 +9,15 @@
 
 * {
     /* color: #1a1a20; */
+    /* font-family: 'Averta-Regular', sans-serif; */
+    /* font-family: 'Averta-BlackItalic', sans-serif; */
     font-family: 'Averta-Regular', sans-serif;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 
 }
@@ -22,8 +31,8 @@ p {
     color: rgb(102, 101, 101);
 }
 .hero {
-    background-image: url(./images/index-images/hero-bg.svg); 
-    padding: 50px 300px 180px;
+    background-image: url(../images/index-images/hero-bg.svg); 
+    padding: 50px 300px 350px;
     
 }
 
@@ -80,3 +89,4 @@ p {
     color: white;
     border: 1px solid red;
 }
+
