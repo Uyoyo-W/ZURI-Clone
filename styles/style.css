@@ -22,7 +22,7 @@ p {
     color: rgb(102, 101, 101);
 }
 .hero {
-    background-image: url(/images/index-images/hero-bg.svg); 
+    background-image: url(./images/index-images/hero-bg.svg); 
     padding: 50px 300px 180px;
     
 }
