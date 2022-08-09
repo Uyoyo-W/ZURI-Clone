@@ -22,58 +22,66 @@ p {
   color: #666565;
 }
 
-.hero {
+.hero-container {
   background-image: url(../images/index-images/hero-bg.svg);
   background-size: cover;
-  padding: 68px 300px 350px;
 }
 
-.hero h1 {
+.hero-container .hero {
+  padding: 68px 0px 300px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-container .hero h1 {
   font-size: 33px;
   font-weight: 700;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 40px 10px 30px;
 }
 
-.hero span a {
-  color: red;
+.hero-container .hero p {
+  padding: 10px;
 }
 
-.hero span a:hover {
+.hero-container .hero span a {
+  color: #e7332b;
+}
+
+.hero-container .hero span a:hover {
   text-decoration: none;
 }
 
-.hero .buttons {
+.hero-container .hero .buttons {
   padding-top: 70px;
 }
 
-.hero .buttons button {
+.hero-container .hero .buttons button {
   padding: 10px 20px;
-  margin: 0px 20px;
+  margin: 15px 20px;
 }
 
-.hero .buttons .button1 {
-  background-color: red;
+.hero-container .hero .buttons .button1 {
+  background-color: #e7332b;
   color: white;
   border: 1px solid transparent;
 }
 
-.hero .buttons .button1:hover {
+.hero-container .hero .buttons .button1:hover {
   background-color: white;
-  color: red;
-  border: 1px solid red;
+  color: #e7332b;
+  border: 1px solid #e7332b;
 }
 
-.hero .buttons .button2 {
+.hero-container .hero .buttons .button2 {
   background-color: white;
-  color: red;
-  border: 1px solid red;
+  color: #e7332b;
+  border: 1px solid #e7332b;
 }
 
-.hero .buttons .button2:hover {
-  background-color: red;
+.hero-container .hero .buttons .button2:hover {
+  background-color: #e7332b;
   color: white;
-  border: 1px solid red;
+  border: 1px solid #e7332b;
 }
 
 .team {
@@ -82,29 +90,30 @@ p {
 }
 
 .team h5 {
-  color: red;
-  font-size: 15px;
+  color: #e7332b;
+  font-size: 14px;
 }
 
 .team h3 {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 40px;
+  margin-bottom: 20px;
 }
 
 .team .zuris {
-  margin-top: 50px;
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 
 .team .zuris .zuri {
   background-color: #fffafa;
-  padding: 50px 50px;
-  margin-left: 30px;
+  padding: 0px 15px;
+  padding: 40px 30px 60px 40px;
+  margin: 30px 15px;
 }
 
 .team .zuris .zuri a {
   text-decoration: none;
-  color: red;
+  color: #e7332b;
 }
 
 .team .zuris .zuri a:hover {
@@ -118,7 +127,7 @@ p {
 
 /* FOOTER */
 footer {
-  margin: 220px 30px 60px 30px;
+  margin: 180px 30px 60px 30px;
   /* padding: 0px; */
 }
 
@@ -126,8 +135,13 @@ footer .top {
   margin-bottom: 70px;
 }
 
+footer .top h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 footer .top a {
-  color: red;
+  color: #e7332b;
 }
 
 footer .top a:hover {
@@ -135,11 +149,39 @@ footer .top a:hover {
 }
 
 footer .top .socials img {
-  width: 7%;
-  margin-right: 10px;
+  width: 20px;
+  margin-right: 8px;
 }
 
 footer .copyright hr {
   border-width: 2px;
+}
+
+@media (max-width: 768px) {
+  .hero-container .hero {
+    padding-bottom: 40px;
+  }
+  .hero-container .hero .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .team {
+    padding-top: 10px;
+  }
+  .team h5 {
+    margin-top: 0px;
+  }
+  .footer .top .column h5 {
+    font-size: 24px;
+  }
+  .footer .top .column .socials img {
+    width: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

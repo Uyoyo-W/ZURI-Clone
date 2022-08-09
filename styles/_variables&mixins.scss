@@ -1,5 +1,38 @@
 // VARIABLES
 
 $black: rgb(102, 101, 101);
-$red: red;
+$red: #e7332b;
 $pinkish: #fffafa;
+
+$tab: 992px;
+$tablet: 768px;
+$phone1: 590px;
+$phone: 425px;
+
+@mixin tab {
+    @media (max-width: #{$tab}) {
+        @content;
+    }
+
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+
+}
+
+@mixin phone1 {
+    @media (max-width: #{$phone1}) {
+        @content;
+    }
+
+}
+
+@mixin phone {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
+
+}

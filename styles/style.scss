@@ -29,60 +29,69 @@ p {
     color: rgb(102, 101, 101);
 }
 
-.hero {
+.hero-container {
     background-image: url(../images/index-images/hero-bg.svg); 
     background-size: cover;
-    padding: 68px 300px 350px;
 
-    h1 {
-        font-size: 33px;
-        font-weight: 700;
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
- 
-    span a {
-        color: $red;
-    }
-
-    span a:hover {
-        text-decoration: none;
-    }
-
-    .buttons {
-        padding-top: 70px;
-
-        button {
-            padding: 10px 20px;
-            margin: 0px 20px;
+    .hero {
+        padding: 68px 0px 300px;
+        // padding: 10px;
+        max-width: 700px;
+        margin: 0 auto ;
+    
+        h1 {
+            font-size: 33px;
+            font-weight: 700;
+            padding: 40px 10px 30px;
             
         }
-
-        .button1 {
-            background-color: $red;
-            color: white;
-            border: 1px solid transparent;
+     
+        p {
+            padding: 10px;
         }
-
-        .button1:hover {
-            background-color: white;
+        span a {
             color: $red;
-            border: 1px solid $red;
         }
-
-        .button2 {
-            background-color: white;
-            color: $red;
-            border: 1px solid $red;
+    
+        span a:hover {
+            text-decoration: none;
         }
-
-        .button2:hover {
-            background-color: $red;
-            color: white;
-            border: 1px solid $red;
+    
+        .buttons {
+            padding-top: 70px;
+    
+            button {
+                padding: 10px 20px;
+                margin: 15px 20px;
+                
+            }
+    
+            .button1 {
+                background-color: $red;
+                color: white;
+                border: 1px solid transparent;
+            }
+    
+            .button1:hover {
+                background-color: white;
+                color: $red;
+                border: 1px solid $red;
+            }
+    
+            .button2 {
+                background-color: white;
+                color: $red;
+                border: 1px solid $red;
+            }
+    
+            .button2:hover {
+                background-color: $red;
+                color: white;
+                border: 1px solid $red;
+            }
         }
-    }
-} 
+    } 
+}
 
 // TEAM SECTION
 .team {
@@ -91,21 +100,25 @@ p {
 
     h5 {
         color: $red;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     h3 {
-        font-size: 25px;
+        font-size: 24px;
         line-height: 40px;
+        margin-bottom: 20px;
     }
 
     .zuris {
-        margin-top: 50px;
-        padding: 10px 50px;
+        padding: 10px 20px;
         .zuri {
+            // margin-top: 50px;
+
             background-color: $pinkish ;
-            padding: 50px 50px;
-            margin-left: 30px;
+            padding: 0px 15px;
+            padding: 40px 30px 60px 40px;
+            // margin-left: 30px;
+            margin: 30px 15px;
 
 
             a {
@@ -128,12 +141,16 @@ p {
 
 /* FOOTER */
 footer {
-    margin: 220px 30px 60px 30px;
+    margin: 180px 30px 60px 30px;
     /* padding: 0px; */
 
     .top {
         margin-bottom: 70px;
 
+        h5 {
+            font-size: 16px;
+            font-weight: bold;
+        }
         a {
             color: $red;
         }
@@ -143,8 +160,9 @@ footer {
         }
         .socials {
             img {
-                width: 7%;
-                margin-right: 10px
+                // width: 7%;
+                width: 20px;
+                margin-right: 8px
             }
         }
     }
@@ -157,5 +175,48 @@ footer {
 }
 
 
+// MEDIA QUERIES
 
+@include tablet {
+   .hero-container{
+        .hero{
+            padding-bottom: 40px;
+            p {
+                // padding-left:  12;
+                // padding-right: 12 ;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .team {
+        padding-top: 10px;
+
+        h5 {
+            margin-top: 0px;
+        }
+    }
+
+    .footer {
+        .top {
+            // padding: 60px 0px;
+            
+           .column {
+                h5 {
+                    font-size: 24px;
+                }
+                .socials {
+                    img {
+                        width: 20px;
+                    }
+                }
+           }
+        }
+    }
+}
 
