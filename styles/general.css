@@ -12,16 +12,4 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-header nav {
-  color: #e7332b;
-}
-
-.hero .hero-text {
-  max-width: 50%;
-}
-
-.hero .hero-img img {
-  width: 404px;
-}
-/*# sourceMappingURL=talent.css.map */
+/*# sourceMappingURL=general.css.map */

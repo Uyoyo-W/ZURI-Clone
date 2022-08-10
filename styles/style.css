@@ -1,9 +1,5 @@
 /* @import url('http://fonts.cdnfonts.com/css/averta-blackitalic?styles=17723'); */
 @import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
-/* @font-face {
-    font-family: 'Graphik';
-    src: url(http://fonts.cdnfonts.com/css/graphik);
-} */
 * {
   /* color: #1a1a20; */
   /* font-family: 'Averta-Regular', sans-serif; */
@@ -18,6 +14,10 @@ body {
           box-sizing: border-box;
 }
 
+/* @font-face {
+    font-family: 'Graphik';
+    src: url(http://fonts.cdnfonts.com/css/graphik);
+} */
 p {
   color: #666565;
 }

@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,uDAAI;AAGZ,AAAA,CAAC,CAAC;EACE,qBAAqB;EACrB,gDAAgD;EAChD,oDAAoD;EACpD,WAAW,EAAE,4BAA4B;CAE5C;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CAEzB;;ADXD,AAEI,MAFE,CAEF,GAAG,CAAC;EACA,KAAK,EELP,OAAO;CFMR;;AAGL,AAEI,KAFC,CAED,UAAU,CAAC;EACP,SAAS,EAAE,GAAG;CACjB;;AAJL,AAMQ,KANH,CAKD,SAAS,CACL,GAAG,CAAC;EAEA,KAAK,EAAE,KAAK;CACf",
     "sources": [
-        "talent.scss"
+        "talent.scss",
+        "general.scss",
+        "_variables&mixins.scss"
     ],
     "names": [],
     "file": "talent.css"

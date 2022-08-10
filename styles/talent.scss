@@ -1,0 +1,24 @@
+@import '../styles/general.scss';
+
+@import '../styles/variables&mixins';
+
+
+header {
+    // padding: 90px;
+    nav {
+        color: $red;
+    }
+}
+
+.hero {
+
+    .hero-text {
+        max-width: 50%;
+    }
+    .hero-img{
+        img {
+            // width: 50%;
+            width: 404px;
+        }
+    }
+}

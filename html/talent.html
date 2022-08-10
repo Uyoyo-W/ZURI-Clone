@@ -5,27 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZURI | Learn, Build, Grow. </title>
-    <link rel="stylesheet" href="./styles/talent.css">
-    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="./images/index-images/zuri-logo-full.svg">
+    <link rel="stylesheet" href="../styles/talent.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/index-images/zuri-internship-img.svg">
+    <link href="http://fonts.cdnfonts.com/css/averta-blackitalic" rel="stylesheet">
 </head>
 <body>
 
+
     <header>
-        <nav>
-            <img src="../images/talent-images/logo2.svg">
-            <ul>
-                <a><li>Home</li></a>
-                <a><li>Impact</li></a>
-                <a><li>Why us</li></a>
-                <a><li>Hire talents</li></a>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container d-flex">
+                <a href="#" class="navbar-brand "><img src="../images/talent-images/logo2.svg" alt="Logo"></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-brand d-flex ">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#impact" class="nav-link">Impact</a></li>
+                        <li class="nav-item"><a href="#why-us" class="nav-link">Why us</a></li>
+                        <li class="nav-item"><a href="#hire" class="nav-link">Hire talents</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>  
     </header>
 
     <main>
-        <div class="hero">
-            <div>
+        <div class="hero container d-flex pt-5 mt-5 justify-content-between justify-content-md-between">
+            <div class="hero-text">
                 <h1>Vetted and Trusted talents</h1>
                 <p>At Zuri Team, we train, test and place talent in various industries. We have access to the best pool of skills in the tech Industry.</p>
                 <div>
@@ -33,12 +42,12 @@
                     <a href="#"><button>Join Talent Pool</button></a>
                 </div>
             </div>
-            <div>
-                <img src="../images/talent-images/section1.png">
+            <div class="hero-img">
+                <img class=" d-flex justify-content-end" src="../images/talent-images/section1.png">
             </div>
             
         </div>
-
+<!--
         <div class="section2">
             <div>
                 <h1>We have impacted the lives of thousands around the world</h1>
@@ -102,7 +111,8 @@
             </div>
         </div>
     </main>
-
+    -->
+    <!--
     <footer>
         <div>
             <img src="../images/talent-images/logo2.svg">
@@ -121,7 +131,7 @@
 
         </div>
     </footer>
-    
+     -->
 
     <script src="../script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
