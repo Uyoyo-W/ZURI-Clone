@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="../images/index-images/zuri-internship-img.svg">
     <link href="http://fonts.cdnfonts.com/css/averta-blackitalic" rel="stylesheet">
+
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
 </head>
-<body>
+<body onload="load()">
 
 
     <header>
@@ -28,7 +34,7 @@
     </header>
 
     <main>
-        <div class="hero d-flex justify-content-between ">
+        <div class="hero d-flex justify-content-between " id="home">
             <div class="hero-text">
                 <h1>Vetted and Trusted <span>talents</span></h1>
                 <p>At Zuri Team, we train, test and place talent in various industries. We have access to the best pool of skills in the tech Industry.</p>
@@ -44,7 +50,7 @@
         </div>
 
         <div class="section2">
-            <div class="container-fluid section2-container d-flex py-5">
+            <div class="container-fluid section2-container d-flex py-5" id="impact">
                 <div class="text-country">
                     <div class="section2-text">
                         <h1>We have impacted the lives of <span>thousands</span> around the world</h1>
@@ -86,54 +92,60 @@
             </div>
         </div>
 
-        <!--
         <div class="section4">
-            <h1>Why Hire our Talents</h1>
-            <div>
-                <div>
-                    <img src="">
-                    <p>Zuri Team has a highly skilled set of talents that are built on referral and successful partnerships.</p>
+            <div class="section4-container container-fluid text-center" id="why-us">
+                <h1>Why Hire our <span>Talents</span></h1>
+                <div class="talents row d-flex align-items-center justify-content-center">
+                    <div class="talent col col-sm-3">
+                        <img src="../images/talent-images/people.svg">
+                        <p>Zuri Team has a highly skilled set of talents that are built on referral and successful partnerships.</p>
+                    </div>
+                    <div class="talent col col-sm-3">
+                        <img src="../images/talent-images/mech.svg">
+                        <p>Our recruiters are exceptionally skilled in identifying top talent around the globe and matching them with the client's needs.</p>
+                    </div>
+                    <div class="talent col col-sm-3">
+                        <img src="../images/talent-images/hand.svg">
+                        <p>We have an 85% fill ratio for every open position we partner for.</p>
+                    </div>
+                    <div class="talent col col-sm-4">
+                        <img src="../images/talent-images/write.svg">
+                        <p>Contract renewal rate for our consultant is 90 percent.</p>
+                    </div>
+                    <div class="talent col col-sm-4">
+                        <img src="../images/talent-images/many.svg">
+                        <p>60% of our consultants are converted to full-time employees.</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="">
-                    <p>Our recruiters are exceptionally skilled in identifying top talent around the globe and matching them with the client's needs.</p>
-                </div>
-                <div>
-                    <img src="">
-                    <p>We have an 85% fill ratio for every open position we partner for.</p>
-                </div>
-                <div>
-                    <img src="">
-                    <p>Contract renewal rate for our consultant is 90 percent.</p>
-                </div>
-                <div>
-                    <img src="">
-                    <p>60% of our consultants are converted to full-time employees.</p>
+                <div class="buttons text-center justify-content-center">
+                    <a href="#"><button class="button1">Hire Talent</button></a>
+                    <a href="#"><button class="button2">Join Talent Pool</button></a>
                 </div>
             </div>
         </div>
     </main>
-    -->
-    <!--
-    <footer>
-        <div>
-            <img src="../images/talent-images/logo2.svg">
-            <p>&copy; Copyright 2022 ZURI TEAM. All rights Reserved</p>
-        </div>
-        <div>
-            <div>
-                <img src="../images/talent-images/facebook.svg">
-                <img src="../images/talent-images/linkd.svg">
-                <img src="../images/talent-images/twit.png">
-                <img src="../images/talent-images/youtube.svg">
-                <p>talent@zuri.team</p>
+    
+    <footer class=" container-fluid ">
+        <div class="footer-container ">
+            <div class="top d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="../images/talent-images/logo.svg">
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="../images/talent-images/facebook.svg"></a>
+                    <a href="#"><img src="../images/talent-images/linkd.svg"></a>
+                    <a href="#"><img src="../images/talent-images/twitter.png" class="twitter"></a>
+                    <a href="#"><img src="../images/talent-images/youtube.svg" class="youtube"></a>
+                </div>
+            </div>
+            <div class="bottom d-flex justify-content-between align-items-center mt-5">
+                <p>&copy; Copyright 2022 ZURI TEAM. All rights Reserved</p>
+                <div>
+                    <a href="#">talent@zuri.team</a>
+                </div>
             </div>
         </div>
-        <div>
-
-        </div>
     </footer>
-     -->
 
     <script src="../script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

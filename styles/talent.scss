@@ -250,3 +250,111 @@ header {
         }
     }
 }
+
+.section4 {
+    background-color: rgb(255, 248, 229);
+    // padding: 100px 80px 100px 80px;
+    width: 100%;
+    padding: 100px 0px;
+
+    .section4-container {
+        h1 {
+            font-weight: 700;
+
+            span {
+                color: $red;
+            }
+        }
+
+        .talents {
+            .talent {
+                background-color: $white;
+                color: $black;
+                margin: 10px;
+                // width: 40px;
+                // width: 450px;
+                // padding-top: 50px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: auto;
+                padding-top: 50px;
+                // display: flex;
+                // flex-direction: column;
+                height: 270px;
+                
+                border-bottom-right-radius: 20px;
+
+                img {
+                    width: 80px;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .talent:hover {
+                background-color: black;
+                color: $white;
+            }
+        }
+
+        .buttons {
+            margin-top: 70px;
+
+            button{
+                padding: 11px 50px;
+                color: $white;
+                border: 1px solid transparent;
+                border-bottom-right-radius: 10px;
+                box-shadow: 0 3.5px 2px -2px $black;
+            }
+
+            button:hover{
+                box-shadow: 0 4px 4px -1.5px $black;
+            }
+
+            .button1{
+                margin-right: 20px;
+                background-color: $red;
+            }
+
+            .button2{
+                background-color: $grey;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #161617;
+    // justify-content: center;
+    // text-align: center;
+   .footer-container {
+    padding: 70px 30px;
+    padding-bottom: 20px;
+
+        .top {
+            .socials {
+                img {
+                    width: 32px;
+                    margin-right: 10px;
+                }
+
+                .youtube {
+                    width: 40px;
+                }
+            }
+        }
+        .bottom {
+            p, a{
+                margin-bottom: 0;
+                color: $white;
+            }
+
+            a:hover {
+                color: $white;
+                text-decoration: none;
+            }
+
+        }
+   }
+}
