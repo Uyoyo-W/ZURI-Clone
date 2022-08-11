@@ -17,11 +17,207 @@ header nav {
   color: #e7332b;
 }
 
+header {
+  background-color: white;
+  width: 100%;
+}
+
+header nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 24px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header nav .nav-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .nav-menu .nav-item {
+  margin-left: 37px;
+  list-style-type: none;
+}
+
+header nav .nav-menu .nav-item .home, header nav .nav-menu .nav-item .impact, header nav .nav-menu .nav-item .why {
+  text-decoration: none;
+  font-size: 16px;
+  color: #787878;
+}
+
+header nav .nav-menu .nav-item .home:hover, header nav .nav-menu .nav-item .impact:hover, header nav .nav-menu .nav-item .why:hover {
+  padding-bottom: 26.5px;
+  padding-top: 26.5px;
+  background-color: #e8e8ee;
+  -webkit-transition: ease;
+  transition: ease;
+}
+
+header nav .nav-menu .nav-item .home {
+  color: #787878;
+  border-bottom: 3px solid #e7332b;
+  padding-bottom: 26.5px;
+  padding-top: 26.5px;
+}
+
+header nav .nav-menu button {
+  background-color: #e7332b;
+  color: white;
+  padding: 7px 30px;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 10px;
+}
+
+.hero {
+  padding-top: 190px;
+  padding: 150px 100px 20px 100px;
+}
+
+.hero {
+  margin-top: 70px;
+}
+
 .hero .hero-text {
+  margin-top: 120px;
   max-width: 50%;
+}
+
+.hero .hero-text h1 {
+  font-weight: 800;
+}
+
+.hero .hero-text p {
+  color: #787878;
+  font-size: 19px;
+}
+
+.hero .hero-text span {
+  color: #e7332b;
+}
+
+.hero .hero-text .buttons {
+  margin-top: 30px;
+}
+
+.hero .hero-text .buttons button {
+  padding: 11px 50px;
+  color: white;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0 3.5px 2px -2px #787878;
+          box-shadow: 0 3.5px 2px -2px #787878;
+}
+
+.hero .hero-text .buttons button:hover {
+  -webkit-box-shadow: 0 4px 4px -1.5px #787878;
+          box-shadow: 0 4px 4px -1.5px #787878;
+}
+
+.hero .hero-text .buttons .button1 {
+  margin-right: 10px;
+  background-color: #e7332b;
+}
+
+.hero .hero-text .buttons .button2 {
+  background-color: #585858;
 }
 
 .hero .hero-img img {
   width: 404px;
+}
+
+.section2 {
+  background-image: url(../images/talent-images/bgsection2.063bd869082548bafa74.png);
+  background-size: cover;
+  padding: 30px 80px 100px 80px;
+}
+
+.section2 .section2-container .text-country {
+  padding-top: 60px;
+}
+
+.section2 .section2-container .text-country .section2-text h1 {
+  font-weight: 900;
+}
+
+.section2 .section2-container .text-country .section2-text h1 span {
+  color: #e7332b;
+}
+
+.section2 .section2-container .text-country .section2-text h6 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.section2 .section2-container .text-country .section2-text p {
+  color: #787878;
+  font-size: 18px;
+}
+
+.section2 .section2-container .text-country .countries div {
+  background-color: #fff;
+  padding: 10px 10px;
+  padding-bottom: 4px;
+  text-align: center;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.section2 .section2-container .text-country .countries div img {
+  width: 40px;
+}
+
+.section2 .section2-container .text-country .countries .usa {
+  margin-right: 0;
+}
+
+.section2 .section2-container .image img {
+  width: 400px;
+}
+
+.section3 {
+  padding: 50px 80px 100px 80px;
+}
+
+.section3 .section3-container h1 {
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 45px;
+}
+
+.section3 .section3-container span {
+  color: #e7332b;
+}
+
+.section3 .section3-container .skills div, .section3 .section3-container .companies div {
+  padding: 15px 17px;
+  margin: 20px 10px;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 20px 7px #f5efef;
+          box-shadow: 3px 3px 20px 7px #f5efef;
+  color: #787878;
+  font-size: 18px;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+}
+
+.section3 .section3-container .skills div:hover, .section3 .section3-container .companies div:hover {
+  top: -15px;
+}
+
+.section3 .section3-container .skills div {
+  padding: 15px 28px;
 }
 /*# sourceMappingURL=talent.css.map */
