@@ -10,15 +10,243 @@ header {
     }
 }
 
-.hero {
+header {
+    background-color: $white;
+    width: 100%;
 
+    // padding-left: 50px;
+    .logo {
+        // height:auto;
+        //width: 170px;
+        // position: absolute;
+        // width: 50%;
+        // height: 50%;
+        // padding: 10px 0px;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0px 24px;
+        position: fixed;
+        top: 0;
+        background-color: $white;
+        z-index: 999;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .nav-menu {
+            justify-content: space-between;
+            // float: left;
+            // float: right;
+            // padding-right: 40px;
+
+
+            .nav-item {
+                margin-left: 37px;
+                list-style-type: none;
+
+                .home, .impact, .why {
+                    text-decoration: none;
+                    font-size: 16px;
+                    // font-weight: 600;
+                    color: $black;
+                
+                }
+
+                .home:hover, .impact:hover, .why:hover {
+                    padding-bottom: 26.5px;
+                    padding-top: 26.5px;
+                    background-color: rgb(232, 232, 238);
+                    transition: ease;
+                }
+
+                .home {
+                    color: $black;
+                    border-bottom: 3px solid $red; 
+                    padding-bottom: 26.5px;
+                    padding-top: 26.5px;
+                }
+
+               
+
+                // .nav-link:hover {
+                //     background-color: #000;
+                //     padding-top: -40px;
+                // }
+            }
+
+            // button {
+            //     margin-top: 8px;
+            //     margin-bottom: 10px;
+            // }
+
+            button {
+                background-color: $red;
+                color: $white;
+                padding: 7px 30px;
+                border: 1px solid transparent;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+
+}
+
+.hero  {
+    padding-top: 190px;
+    padding: 150px 100px 20px 100px;
+}
+
+.hero  {
+    margin-top: 70px;
     .hero-text {
+        margin-top: 120px;
         max-width: 50%;
+
+        h1 {
+            font-weight: 800;
+        }
+
+        p{
+            color: $black;
+            font-size: 19px;
+            // padding-right: 70px;
+        }
+
+        span {
+            color: $red;
+        }
+
+        .buttons {
+            margin-top: 30px;
+
+            button{
+                padding: 11px 50px;
+                color: $white;
+                border: 1px solid transparent;
+                border-bottom-right-radius: 10px;
+                box-shadow: 0 3.5px 2px -2px $black;
+            }
+
+            button:hover{
+                box-shadow: 0 4px 4px -1.5px $black;
+            }
+
+            .button1{
+                margin-right: 10px;
+                background-color: $red;
+            }
+
+            .button2{
+                background-color: $grey;
+            }
+        }
     }
     .hero-img{
         img {
             // width: 50%;
             width: 404px;
+        }
+    }
+}
+
+.section2{
+    background-image: url(../images/talent-images/bgsection2.063bd869082548bafa74.png);
+    background-size: cover;
+    padding: 30px 80px 100px 80px;
+
+    .section2-container {
+        .text-country {
+            padding-top: 60px;
+            .section2-text {
+                h1 {
+                    font-weight: 900;
+                   span{
+                    color: $red;
+                   }
+                }
+
+                h6 {
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+                
+                p{
+                    color: $black;
+                    font-size: 18px;
+                }
+            }
+
+            .countries {
+                
+                div {
+                    background-color: #fff;
+                    padding: 10px 10px;
+                    padding-bottom: 4px;
+                    text-align: center;
+                    border-radius: 6px;
+                    margin-right: 20px;
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                .usa {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .image{
+            img {
+                // width: 50%;
+                width: 400px;
+            }
+        }
+    }
+}
+
+.section3 {
+    padding: 50px 80px 100px 80px;
+
+    .section3-container {
+        h1 {
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            font-size: 45px;
+        }
+
+        span{
+            color: $red;
+        }
+
+        .skills, .companies {
+            div{
+                padding: 15px 17px;
+                margin: 20px 10px;
+                background-color: $white;
+                border-radius: 8px;
+                box-shadow: 3px 3px 20px 7px rgb(245, 239, 239);
+                color: $black;
+                font-size: 18px;
+                position: relative;
+                top: 0;
+                transition: top ease 0.3s;
+            }
+
+            div:hover {
+                top: -15px;
+            }
+        }
+
+        .skills {
+            div {
+            padding: 15px 28px;
+
+            
+            }
         }
     }
 }

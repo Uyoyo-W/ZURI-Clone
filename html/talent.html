@@ -14,32 +14,27 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container d-flex">
-                <a href="#" class="navbar-brand "><img src="../images/talent-images/logo2.svg" alt="Logo"></a>
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="nav navbar-brand d-flex ">
-                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#impact" class="nav-link">Impact</a></li>
-                        <li class="nav-item"><a href="#why-us" class="nav-link">Why us</a></li>
-                        <li class="nav-item"><a href="#hire" class="nav-link">Hire talents</a></li>
+        <nav class=" d-flex align-items-center justify-content-between">
+            <!-- <div class=" d-flex"> -->
+                <a href="../index.html" class="navbar-brand "><img src="../images/talent-images/logo2.svg" alt="Logo" class="logo"></a>
+                    <ul class="nav nav-menu d-flex align-items-center">
+                        <li class="nav-item"><a href="#home" class="nav-link home">Home</a></li>
+                        <li class="nav-item"><a href="#impact" class="nav-link impact">Impact</a></li>
+                        <li class="nav-item"><a href="#why-us" class="nav-link why">Why us</a></li>
+                        <li class="nav-item"><a href="#hire" class="nav-link"><button>Hire talents</button></a></li>
                     </ul>
-                </div>    
-            </div>
+            <!-- </div> -->
         </nav>  
     </header>
 
     <main>
-        <div class="hero container d-flex pt-5 mt-5 justify-content-between justify-content-md-between">
+        <div class="hero d-flex justify-content-between ">
             <div class="hero-text">
-                <h1>Vetted and Trusted talents</h1>
+                <h1>Vetted and Trusted <span>talents</span></h1>
                 <p>At Zuri Team, we train, test and place talent in various industries. We have access to the best pool of skills in the tech Industry.</p>
-                <div>
-                    <a href="#"><button>Hire Talent</button></a>
-                    <a href="#"><button>Join Talent Pool</button></a>
+                <div class="buttons">
+                    <a href="#"><button class="button1">Hire Talent</button></a>
+                    <a href="#"><button class="button2">Join Talent Pool</button></a>
                 </div>
             </div>
             <div class="hero-img">
@@ -47,44 +42,51 @@
             </div>
             
         </div>
-<!--
+
         <div class="section2">
-            <div>
-                <h1>We have impacted the lives of thousands around the world</h1>
-                <h6>6,000 trained in 14 months</h6>
-                <p>Talent Placed in 5 countries</p>
-                <div>
-                    <div><img src="../images/talent-images/GER.svg"></div>
-                    <div><img src="../images/talent-images/ENG.svg"></div>
-                    <div><img src="../images/talent-images/ind.svg"></div>
-                    <div><img src="../images/talent-images/NIG.svg"></div>
-                    <div><img src="../images/talent-images/ussa.svg"></div>
+            <div class="container-fluid section2-container d-flex py-5">
+                <div class="text-country">
+                    <div class="section2-text">
+                        <h1>We have impacted the lives of <span>thousands</span> around the world</h1>
+                        <h6>6,000 trained in 14 months</h6>
+                        <p>Talent Placed in 5 countries</p>
+                    </div>
+                    <div class=" d-flex countries">
+                        <div><img src="../images/talent-images/GER.svg"></div>
+                        <div><img src="../images/talent-images/ENG.svg"></div>
+                        <div><img src="../images/talent-images/ind.svg"></div>
+                        <div><img src="../images/talent-images/NIG.svg"></div>
+                        <div class="usa"><img src="../images/talent-images/ussa.svg"></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="../images/talent-images/section2.png">
+                <div class="image">
+                    <img src="../images/talent-images/section2.png">
+                </div>
             </div>
         </div>
 
         <div class="section3">
-            <h1>Skills of our talents that you will need</h1>
-            <div>
-                <div>UI/UX Designers</div>
-                <div>Backend Developers</div>
-                <div>DevOps Engineers</div>
-                <div>Frontend Developers</div>
-            </div>
-            <h1>Where our talents work</h1>
-            <div>
-                <div>GitHub</div>
-                <div>Microsoft</div>
-                <div>Reskill Americans</div>
-                <div>Flutterwave</div>
-                <div>Google</div>
-                <div>Career Transitioners</div>
+            <div class="section3-container container-fluid">
+                <h1>Skills of our <span>talents</span> that you will need</h1>
+                <div class="skills d-flex ">
+                    <div class="ui">UI/UX Designers</div>
+                    <div>Backend Developers</div>
+                    <div>DevOps Engineers</div>
+                    <div>Frontend Developers</div>
+                </div>
+                <h1>Where our talents work</h1>
+                <div class="companies d-flex">
+                    <div>GitHub</div>
+                    <div>Microsoft</div>
+                    <div>Reskill Americans</div>
+                    <div>Flutterwave</div>
+                    <div>Google</div>
+                    <div>Career Transitioners</div>
+                </div>
             </div>
         </div>
 
+        <!--
         <div class="section4">
             <h1>Why Hire our Talents</h1>
             <div>
