@@ -13,23 +13,15 @@ body {
           box-sizing: border-box;
 }
 
-header nav {
-  color: #e7332b;
-}
-
 header {
   background-color: white;
   width: 100%;
 }
 
 header nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 24px;
+  background-color: white;
   position: fixed;
   top: 0;
-  background-color: white;
   z-index: 999;
   width: 100%;
   padding-left: 100px;
@@ -43,7 +35,6 @@ header nav .nav-menu {
 }
 
 header nav .nav-menu .nav-item {
-  margin-left: 37px;
   list-style-type: none;
 }
 
@@ -57,13 +48,13 @@ header nav .nav-menu .nav-item .home:hover, header nav .nav-menu .nav-item .impa
   padding-bottom: 26.5px;
   padding-top: 26.5px;
   background-color: #e8e8ee;
+  border-bottom: 3px solid #e7332b;
   -webkit-transition: ease;
   transition: ease;
 }
 
 header nav .nav-menu .nav-item .home {
   color: #787878;
-  border-bottom: 3px solid #e7332b;
   padding-bottom: 26.5px;
   padding-top: 26.5px;
 }
