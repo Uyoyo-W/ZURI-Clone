@@ -4,36 +4,23 @@
 
 
 header {
-    // padding: 90px;
-    nav {
-        color: $red;
-    }
-}
-
-header {
     background-color: $white;
     width: 100%;
 
     // padding-left: 50px;
-    .logo {
+    //.logo {
         // height:auto;
         //width: 170px;
         // position: absolute;
         // width: 50%;
         // height: 50%;
         // padding: 10px 0px;
-    }
+   // }
 
     nav {
-        justify-content: space-between;
-        padding: 0px 24px;
-        position: fixed;
-        top: 0;
         background-color: $white;
-        z-index: 999;
-        width: 100%;
-        padding-left: 100px;
-        padding-right: 100px;
+        @include nav;
+        @include padding-lr(100px, 100px);
 
         .nav-menu {
             justify-content: space-between;
@@ -43,14 +30,10 @@ header {
 
 
             .nav-item {
-                margin-left: 37px;
-                list-style-type: none;
+                @include nav-item;
 
                 .home, .impact, .why {
-                    text-decoration: none;
-                    font-size: 16px;
-                    // font-weight: 600;
-                    color: $black;
+                    @include nav-link;
                 
                 }
 
@@ -58,12 +41,12 @@ header {
                     padding-bottom: 26.5px;
                     padding-top: 26.5px;
                     background-color: rgb(232, 232, 238);
+                    border-bottom: 3px solid $red; 
                     transition: ease;
                 }
 
                 .home {
                     color: $black;
-                    border-bottom: 3px solid $red; 
                     padding-bottom: 26.5px;
                     padding-top: 26.5px;
                 }

@@ -3,13 +3,23 @@
 // $black: rgb(102, 101, 101);
 $black: #787878;
 $red: #e7332b;
+// $d-red: ;
 $pinkish: #fffafa;
 $white: white;
 $grey: #585858;
+$desktop: 1130px;
 $tab: 992px;
 $tablet: 768px;
 $phone1: 590px;
 $phone: 425px;
+$sphone: 336px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+
+}
 
 @mixin tab {
     @media (max-width: #{$tab}) {
@@ -39,3 +49,38 @@ $phone: 425px;
 
 }
 
+@mixin sphone {
+    @media (max-width: #{$sphone}) {
+        @content;
+    }
+
+}
+
+@mixin padding-tb($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin padding-lr($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin nav {
+    // padding: 0px 24px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+@mixin nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    // font-weight: 600;
+    color: $black;
+}
+
+@mixin nav-item {
+    list-style-type: none;
+}

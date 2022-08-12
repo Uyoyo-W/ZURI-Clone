@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=training.css.map */
+@import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+* {
+  /* color: #1a1a20; */
+  /* font-family: 'Averta-Regular', sans-serif; */
+  /* font-family: 'Averta-BlackItalic', sans-serif; */
+  font-family: 'Averta-Regular', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav {
+  background-color: #fffdf5;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header nav .nav-menu {
+  list-style-type: none;
+}
+
+header nav .nav-menu .nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #787878;
+  font-size: 18px;
+  margin-left: 27px;
+}
+
+header nav .nav-menu .click .thumbs div {
+  background-color: #e7332b;
+  border-radius: 50%;
+  border: 8px solid transparent;
+}
+
+header nav .nav-menu .click .thumbs div img {
+  width: 50px;
+  background-color: #e7332b;
+  border-radius: 50%;
+}
+
+header nav .nav-menu .click .thumbs p {
+  background-color: #e7332b;
+  color: white;
+  margin-left: -8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header nav .nav-menu .click:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1130px) {
+  header nav {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  header nav .logo {
+    width: 297px;
+  }
+  header nav .nav-menu .nav-link {
+    margin-left: 0;
+    padding: 8px 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  header nav .nav-menu .nav-item {
+    display: none;
+  }
+}
+
+@media (max-width: 590px) {
+  header nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header nav .logo {
+    width: 170px;
+  }
+}
+
+@media (max-width: 425px) {
+  header nav .logo {
+    width: 130px;
+    min-width: 100px;
+  }
+  header nav .nav-menu .click .thumbs div img {
+    width: 40px;
+  }
+  header nav .nav-menu .click .thumbs p {
+    padding: 8px 20px;
+    padding-left: 4px;
+    font-size: 16px;
+    margin-left: -9px;
+  }
+}
+
+@media (max-width: 336px) {
+  header nav .logo {
+    width: 110px;
+  }
+  header nav .nav-menu .click .thumbs p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=training.css.map */
