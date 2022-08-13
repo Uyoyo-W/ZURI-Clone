@@ -192,6 +192,167 @@ header nav .nav-menu .click:hover {
   background-color: #e7332b;
 }
 
+.section3 {
+  background-color: #e7332b;
+  color: white;
+}
+
+.section3 .section3-container {
+  padding: 80px 80px;
+  padding-right: 30px;
+}
+
+.section3 .section3-container .first .text .p1 {
+  font-size: 18px;
+}
+
+.section3 .section3-container .first .text h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -13px;
+  margin-bottom: 50px;
+}
+
+.section3 .section3-container .first .text .p2 {
+  font-size: 17px;
+}
+
+.section3 .section3-container .first .text a button {
+  font-size: 18px;
+  padding: 7px 25px;
+  margin: 30px 0;
+  margin-bottom: 40px;
+  color: #e7332b;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1px 4px -1.5px black;
+          box-shadow: 0 1px 4px -1.5px black;
+}
+
+.section3 .section3-container .first .perks .perk {
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 6px 12px;
+  padding-right: 9px;
+}
+
+.section3 .section3-container .first .perks .perk img {
+  width: 50px;
+}
+
+.section3 .section3-container .first .perks .perk p {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.section3 .section3-container .second img {
+  width: 700px;
+}
+
+.section4 .section4-container {
+  padding: 70px 50px;
+}
+
+.section4 .section4-container .text h6 {
+  color: #e7332b;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.section4 .section4-container .text h4 {
+  font-size: 40px;
+  padding-right: 650px;
+  font-weight: 600;
+}
+
+.section4 .section4-container .areas .area {
+  padding: 50px 30px;
+  background: #afae7f;
+}
+
+.section4 .section4-container .areas .area h6 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section4 .section4-container .areas .area .courses img {
+  margin-right: 12px;
+  margin-bottom: 30px;
+}
+
+.section4 .section4-container .areas .area .courses .html, .section4 .section4-container .areas .area .courses .css {
+  width: 35px;
+}
+
+.section4 .section4-container .areas .area .courses .js, .section4 .section4-container .areas .area .courses .adobe {
+  width: 45px;
+}
+
+.section4 .section4-container .areas .area .courses .php, .section4 .section4-container .areas .area .courses .python, .section4 .section4-container .areas .area .courses .aws {
+  width: 55px;
+}
+
+.section4 .section4-container .areas .area .courses .bash, .section4 .section4-container .areas .area .courses .django {
+  width: 80px;
+}
+
+.section4 .section4-container .areas .area .courses .ubuntu, .section4 .section4-container .areas .area .courses .figma {
+  width: 100px;
+}
+
+.section4 .section4-container .areas .area .courses .laravel, .section4 .section4-container .areas .area .courses .react {
+  width: 75px;
+}
+
+.section4 .section4-container .areas .area p {
+  color: #787878;
+  padding: 10px 0px;
+}
+
+.section4 .section4-container .enroll a button {
+  font-size: 18px;
+  padding: 10px 30px;
+  margin: 30px 0;
+  margin-bottom: 40px;
+  color: white;
+  background-color: #e7332b;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1px 4px -1.5px black;
+          box-shadow: 0 1px 4px -1.5px black;
+}
+
+.section5 {
+  background-color: #e7332b;
+  color: white;
+}
+
+.section5 .section5-container {
+  padding: 50px 50px;
+}
+
+.section6 {
+  background-color: #e7332b;
+  color: white;
+}
+
+.section6 .section6-container {
+  padding: 50px 50px;
+}
+
+.section7 {
+  background-color: #e7332b;
+  color: white;
+}
+
+.section7 .section7-container {
+  padding: 50px 50px;
+}
+
 footer {
   background-color: #fffdf5;
 }
@@ -201,6 +362,10 @@ footer .footer-container {
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+footer .bottom a {
+  color: black;
 }
 
 @media (max-width: 1130px) {
