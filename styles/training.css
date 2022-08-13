@@ -151,7 +151,7 @@ header nav .nav-menu .click:hover {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 130px;
 }
 
 .section2 .section2-container .top .text h6 {
@@ -168,30 +168,27 @@ header nav .nav-menu .click:hover {
   width: 200px;
 }
 
-.section2 .section2-container .boxes {
+.section2 .section2-container .features {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-.section2 .section2-container .boxes .box {
+.section2 .section2-container .features .feature-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section2 .section2-container .features .feature-container .feature {
   border-radius: 30px;
   -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
           box-shadow: 3px 3px 20px 7px #f5f3f3;
-  top: 0;
   -webkit-transition: top ease 0.1s;
   transition: top ease 0.1s;
-  padding: 50px 60px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin: 20px;
+  padding: 70px 50px;
 }
 
-.section2 .section2-container .boxes .box:hover {
-  top: -15px;
-}
-
-.section2 .section2-container .boxes .box1 {
+.section2 .section2-container .features .feature-container .feature1, .section2 .section2-container .features .feature-container .feature2, .section2 .section2-container .features .feature-container .feature4, .section2 .section2-container .features .feature-container .feature5 {
   background-color: #e7332b;
 }
 
