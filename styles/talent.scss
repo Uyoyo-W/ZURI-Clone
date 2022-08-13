@@ -1,6 +1,11 @@
 @import '../styles/general.scss';
 
 @import '../styles/variables&mixins';
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
+*{
+    font-family: 'Graphik', sans-serif;
+}
 
 
 header {
@@ -34,6 +39,8 @@ header {
 
                 .home, .impact, .why {
                     @include nav-link;
+                    // padding: 10px 24px;
+                    margin-right: 20px;
                 
                 }
 

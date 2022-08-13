@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+@import url("http://fonts.cdnfonts.com/css/graphik");
 * {
   /* color: #1a1a20; */
   /* font-family: 'Averta-Regular', sans-serif; */
@@ -11,6 +12,14 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+* {
+  font-family: 'Graphik', sans-serif;
+}
+
+body {
+  background-color: #fffdf5;
 }
 
 header nav {
@@ -59,6 +68,142 @@ header nav .nav-menu .click .thumbs p {
 
 header nav .nav-menu .click:hover {
   text-decoration: none;
+}
+
+.hero {
+  padding-top: 190px;
+  padding-bottom: 140px;
+}
+
+.hero .hero-container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.hero .hero-container .female img {
+  width: 370px;
+  margin-bottom: -100px;
+}
+
+.hero .hero-container .male {
+  width: 100%;
+}
+
+.hero .hero-container .male img {
+  padding-top: 16px;
+  width: 300px;
+}
+
+.hero .hero-container .hero-text h6 {
+  font-size: 17px;
+  color: #e7332b;
+  font-weight: 400;
+}
+
+.hero .hero-container .hero-text h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hero .hero-container .hero-text p {
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 18px;
+  color: #787878;
+  margin-top: 50px;
+}
+
+.hero .hero-container .hero-text a button {
+  padding: 8px 35px;
+  color: white;
+  background-color: #e7332b;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.powered {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.powered .ingressive .text1 p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.powered .ingressive .image .I4G {
+  width: 230px;
+}
+
+.powered .ingressive .text2 p {
+  font-size: 25px;
+  text-align: end;
+}
+
+.powered .ingressive .text2 a {
+  color: #43b975;
+  text-decoration: underline;
+}
+
+.section2 .section2-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.section2 .section2-container .top .text h6 {
+  font-size: 24px;
+  color: #e7332b;
+}
+
+.section2 .section2-container .top .text p {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section2 .section2-container .top .image img {
+  width: 200px;
+}
+
+.section2 .section2-container .boxes {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.section2 .section2-container .boxes .box {
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
+          box-shadow: 3px 3px 20px 7px #f5f3f3;
+  top: 0;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+  padding: 50px 60px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin: 20px;
+}
+
+.section2 .section2-container .boxes .box:hover {
+  top: -15px;
+}
+
+.section2 .section2-container .boxes .box1 {
+  background-color: #e7332b;
+}
+
+footer {
+  background-color: #fffdf5;
+}
+
+footer .footer-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1130px) {
