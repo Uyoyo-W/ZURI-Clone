@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+@import url("http://fonts.cdnfonts.com/css/graphik");
 * {
   /* color: #1a1a20; */
   /* font-family: 'Averta-Regular', sans-serif; */
@@ -11,6 +12,10 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+* {
+  font-family: 'Graphik', sans-serif;
 }
 
 header {
@@ -42,6 +47,7 @@ header nav .nav-menu .nav-item .home, header nav .nav-menu .nav-item .impact, he
   text-decoration: none;
   font-size: 16px;
   color: #787878;
+  margin-right: 20px;
 }
 
 header nav .nav-menu .nav-item .home:hover, header nav .nav-menu .nav-item .impact:hover, header nav .nav-menu .nav-item .why:hover {

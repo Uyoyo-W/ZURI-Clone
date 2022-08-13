@@ -14,6 +14,10 @@ $phone1: 590px;
 $phone: 425px;
 $sphone: 336px;
 
+@mixin bgc {
+    background-color: #fffdf5;
+}
+
 @mixin desktop {
     @media (max-width: #{$desktop}) {
         @content;
