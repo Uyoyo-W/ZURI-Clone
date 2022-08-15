@@ -18,10 +18,6 @@ body {
   font-family: 'Graphik', sans-serif;
 }
 
-body {
-  background-color: #fffdf5;
-}
-
 header nav {
   background-color: #fffdf5;
   position: fixed;
@@ -43,7 +39,7 @@ header nav .nav-menu .nav-link {
   font-size: 16px;
   color: #787878;
   font-size: 18px;
-  margin-left: 27px;
+  margin-right: 27px;
 }
 
 header nav .nav-menu .click .thumbs div {
@@ -61,6 +57,7 @@ header nav .nav-menu .click .thumbs div img {
 header nav .nav-menu .click .thumbs p {
   background-color: #e7332b;
   color: white;
+  margin-right: 0;
   margin-left: -8px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -105,12 +102,25 @@ header nav .nav-menu .click:hover {
   font-weight: 600;
 }
 
+.hero .hero-container .hero-text .line {
+  width: 180px;
+  margin-left: 240px;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
 .hero .hero-container .hero-text p {
   padding-left: 80px;
   padding-right: 80px;
   font-size: 18px;
   color: #787878;
-  margin-top: 50px;
+  margin-top: 17px;
+}
+
+.hero .hero-container .hero-text .face {
+  width: 55px;
+  margin-left: -220px;
+  margin-top: 40px;
 }
 
 .hero .hero-container .hero-text a button {
@@ -121,6 +131,13 @@ header nav .nav-menu .click:hover {
   border-radius: 30px;
   font-size: 18px;
   margin-top: 30px;
+  margin-left: 200px;
+}
+
+.hero .hero-container .hero-text .wire {
+  width: 80px;
+  margin-bottom: -140px;
+  margin-left: -50px;
 }
 
 .powered {
@@ -148,10 +165,13 @@ header nav .nav-menu .click:hover {
 }
 
 .section2 .section2-container {
-  padding-left: 40px;
-  padding-right: 40px;
   padding-top: 50px;
   padding-bottom: 130px;
+}
+
+.section2 .section2-container .top {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .section2 .section2-container .top .text h6 {
@@ -175,21 +195,45 @@ header nav .nav-menu .click:hover {
 }
 
 .section2 .section2-container .features .feature-container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px 70px;
 }
 
 .section2 .section2-container .features .feature-container .feature {
+  background-color: #fffdf5;
   border-radius: 30px;
   -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
           box-shadow: 3px 3px 20px 7px #f5f3f3;
   -webkit-transition: top ease 0.1s;
   transition: top ease 0.1s;
-  padding: 70px 50px;
+  width: 100%;
+}
+
+.section2 .section2-container .features .feature-container .feature img {
+  width: 130px;
+  margin-left: 158px;
+}
+
+.section2 .section2-container .features .feature-container .feature .text {
+  padding: 0px 40px;
+}
+
+.section2 .section2-container .features .feature-container .feature .text h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.section2 .section2-container .features .feature-container .feature .text h3 {
+  margin: 35px 0px 40px 0px;
+  font-size: 36px;
 }
 
 .section2 .section2-container .features .feature-container .feature1, .section2 .section2-container .features .feature-container .feature2, .section2 .section2-container .features .feature-container .feature4, .section2 .section2-container .features .feature-container .feature5 {
   background-color: #e7332b;
+  margin-bottom: 20px;
+}
+
+.section2 .section2-container .features .feature-container .feature1 {
+  color: white;
 }
 
 .section3 {
@@ -252,6 +296,10 @@ header nav .nav-menu .click:hover {
   width: 700px;
 }
 
+.section4 {
+  background-color: #fffdf5;
+}
+
 .section4 .section4-container {
   padding: 70px 50px;
 }
@@ -270,7 +318,10 @@ header nav .nav-menu .click:hover {
 
 .section4 .section4-container .areas .area {
   padding: 50px 30px;
-  background: #afae7f;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
+          box-shadow: 3px 3px 20px 7px #f5f3f3;
 }
 
 .section4 .section4-container .areas .area h6 {
@@ -315,9 +366,9 @@ header nav .nav-menu .click:hover {
 
 .section4 .section4-container .enroll a button {
   font-size: 18px;
-  padding: 10px 30px;
-  margin: 30px 0;
+  padding: 10px 40px;
   margin-bottom: 40px;
+  margin-top: 50px;
   color: white;
   background-color: #e7332b;
   border: 1px solid transparent;
@@ -327,30 +378,170 @@ header nav .nav-menu .click:hover {
 }
 
 .section5 {
-  background-color: #e7332b;
-  color: white;
+  background-color: #fffdf5;
+  color: black;
 }
 
 .section5 .section5-container {
   padding: 50px 50px;
 }
 
-.section6 {
+.section5 .section5-container .text {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.section5 .section5-container .text p {
+  font-size: 25px;
+  color: #e7332b;
+}
+
+.section5 .section5-container .text h4 {
+  margin-top: -20px;
+  font-size: 39px;
+  font-weight: 600;
+}
+
+.section5 .section5-container .faqs {
+  padding: 50px 100px;
+}
+
+.section5 .section5-container .faqs .question {
+  border: 1px solid #787878;
+  padding: 30px 0px 10px 20px;
+}
+
+.section5 .section5-container .faqs .question p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section5 .section5-container .bottom {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.section5 .section5-container .bottom p {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #787878;
+}
+
+.section5 .section5-container .bottom a button {
   background-color: #e7332b;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 6px 20px;
   color: white;
+}
+
+.section6 {
+  background-color: #fffdf5;
+  color: black;
 }
 
 .section6 .section6-container {
   padding: 50px 50px;
 }
 
+.section6 .section6-container .text {
+  margin-bottom: 50px;
+}
+
+.section6 .section6-container .text h6 {
+  font-size: 25px;
+  color: #e7332b;
+  font-weight: 400;
+}
+
+.section6 .section6-container .text h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.section6 .section6-container .text p {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.section6 .section6-container .paths {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.section6 .section6-container .paths .path {
+  background-color: black;
+  color: white;
+  border-radius: 70px;
+  padding: 70px 50px 50px 50px;
+}
+
+.section6 .section6-container .paths .path h4 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.section6 .section6-container .paths .path .p1 {
+  margin-top: 26px;
+}
+
+.section6 .section6-container .paths .path h6 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.section6 .section6-container .paths .path ul li {
+  margin-left: -27px;
+}
+
+.section6 .section6-container .paths .path1 {
+  margin-right: 45px;
+}
+
+.section6 .section6-container .paths .path1 ul p {
+  margin-left: -27px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section6 .section6-container .paths .path2 ul li {
+  margin-bottom: 15px;
+}
+
+.section6 .section6-container .paths .path2 .post li {
+  margin-bottom: 0px;
+}
+
 .section7 {
-  background-color: #e7332b;
   color: white;
 }
 
 .section7 .section7-container {
-  padding: 50px 50px;
+  padding: 70px 0;
+  background-color: #e7332b;
+  margin: 50px 40px;
+  border-radius: 27px;
+}
+
+.section7 .section7-container h4 {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.section7 .section7-container a button {
+  font-size: 18px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  color: #e7332b;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1px 4px -1.5px black;
+          box-shadow: 0 1px 4px -1.5px black;
 }
 
 footer {
