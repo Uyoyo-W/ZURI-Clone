@@ -62,23 +62,14 @@ header {
 .hero{
     // @include bgc;
     @include padding-tb(190px, 140px);
+    padding-bottom: 0;
     .hero-container{
     @include padding-lr(70px, 70px);
 
         .female{
-            img {
-                // height: 70px
-            // width: 350px;
-            // height: 350px;
-            // width: 30%;
-            // width: 600px;
-            // width: 200px;
-            // width: 390px;
-            // width: 360px;
-            // padding-top: 16px;
-            // margin-top: 80px;
-            width: 370px;
-            margin-bottom: -100px;
+            img {     
+                width: 370px;
+            // margin-bottom: -100px;
             }
         }
 
@@ -95,6 +86,10 @@ header {
 
         .hero-text{
             // width: 30%;
+            background-image: url(../images/training-images/maleface.svg);
+            background-repeat: no-repeat;
+            background-size: 50px auto;
+            background-position: 50px 400px;
             h6{
                 font-size: 17px;
                 color: $red;
@@ -102,7 +97,7 @@ header {
                 // font-weight: lighter;
             }
             h1{
-                font-size: 50px;
+                font-size: 49px;
                 font-weight: 600;
                 // width: 520px
             }
@@ -118,12 +113,18 @@ header {
                 color: $black;
                 margin-top: 17px;
             }
-            .face{
-                width: 55px;
-                margin-left: -220px;
-                margin-top: 40px;
+            // .face{
+            //     width: 50px;
+            //     margin-left: 0px;
+            //     margin-top: 0px;
                 
-            }
+            // }
+           .enroll{
+                background-image: url(../images/training-images/section1wire.svg);
+                background-repeat: no-repeat;
+                background-size: 80px auto;
+                background-position: 320px 70px;
+                padding-bottom: 140px;
             a{
                 button {
                     padding: 8px 35px;
@@ -134,14 +135,15 @@ header {
                     font-size: 18px;
                     // margin: 0px 80px;
                     margin-top: 30px;
-                    margin-left: 200px;
+                   
                 }
             }
-            .wire{
-                width: 80px;
-                margin-bottom: -140px;
-                margin-left: -50px;
-            }
+           }
+            // .wire{
+            //     width: 80px;
+            //     margin-bottom: -140px;
+            //     margin-left: -100px;
+            // }
         }
     }
 }
@@ -586,7 +588,25 @@ footer{
 
 
 //MEDIA QUERIES
-@include desktop {
+// @include desktop{
+//     .hero{
+//         .hero-container{
+//             .female{
+
+//             }
+//             .male{
+
+//             }
+//             .hero-text{
+//                 h1{
+//                     font-size: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@include desktop1 {
     header{
         nav{
             @include padding-lr(40px, 40px);
@@ -597,11 +617,30 @@ footer{
             .nav-menu{
                 .nav-link{
                     margin-left: 0;
+                    margin-right: 5px;
                     padding: 8px 13px;
                 }
             }
         }
     }
+    .hero{
+        .hero-container{
+            .female{
+                img{
+                    width: 300px;
+                    margin: 0;
+                }
+            }
+            .hero-text{
+                h1{
+                    font-size: 42px;
+                }
+                
+            }
+        }
+    }
+    
+
 }
 
 @include tab {
@@ -611,10 +650,65 @@ footer{
                 .nav-item{
                     display: none;
                 }
+                .click{
+                    .thumbs{
+                        // margin-left: -100px;
+
+                        div{
+                            border-width: 12px;
+                        }
+                        p{
+                            font-size: 17px;
+                            padding-right: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero{
+        padding-top: 100px;
+        .hero-container{
+            @include padding-lr(30px, 30px);
+            .female{
+                // display: flex;
+                // margin: auto;
+                display: flex;
+                justify-content: center;
+                img{
+                    //  width: 660px;
+                    //  margin: 0px 30px;
+                    width: 100%;
+                    max-width: 660px;
+                    
+                    // margin: 0 80px;
+                    // margin-left: 60px;
+                    //  margin: 0;
+                    
+                        // height: 500px;
+                }
+            }
+            .male {
+                display: none;
+            }
+            .hero-text{
+                background-position: 50px 340px;
+                background-size: 54px auto;
+                h1{
+                    font-size: 44px;
+                }
+                .enroll{
+                    background-position: 400px 100px;
+                    background-size: 95px auto;
+                    padding-bottom: 190px;
+                }
             }
         }
     }
 }
+
+
 
 
 @include phone1 {
@@ -624,6 +718,36 @@ footer{
             .logo{
                 width: 170px;
                 // width: 20%
+            }
+        }
+    }
+    .hero{
+        padding-top: 100px;
+        .hero-container{
+            .hero-text{
+                background-image: none;
+                h1{
+                    font-size: 28px;
+                }
+                .line{
+                    width: 100px;
+                    margin-left: 0;
+                    margin-top: -33px;
+                }
+                p{
+                    font-size: 16px;
+                    padding: 0;
+                }
+                .enroll{
+                    background-position: 250px 70px;
+                    background-size: 70px auto;
+                    padding-bottom: 120px;
+                    a{
+                        button{
+                            padding: 8px 20px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -650,6 +774,33 @@ footer{
                            padding-left: 4px;
                            font-size: 16px;
                            margin-left: -9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero{
+        .hero-container{
+        @include padding-lr(0, 0);
+
+            .hero-text{
+                h1{
+                    font-size: 28px;
+                }
+                
+                p{
+                    font-size: 16px;
+                    padding: 0;
+                }
+                .enroll{
+                    background-position: 200px 85px;
+                    background-size: 70px auto;
+                    padding-bottom: 120px;
+                    a{
+                        button{
+                            padding: 8px 20px;
                         }
                     }
                 }

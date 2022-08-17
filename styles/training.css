@@ -70,6 +70,7 @@ header nav .nav-menu .click:hover {
 .hero {
   padding-top: 190px;
   padding-bottom: 140px;
+  padding-bottom: 0;
 }
 
 .hero .hero-container {
@@ -79,7 +80,6 @@ header nav .nav-menu .click:hover {
 
 .hero .hero-container .female img {
   width: 370px;
-  margin-bottom: -100px;
 }
 
 .hero .hero-container .male {
@@ -91,6 +91,13 @@ header nav .nav-menu .click:hover {
   width: 300px;
 }
 
+.hero .hero-container .hero-text {
+  background-image: url(../images/training-images/maleface.svg);
+  background-repeat: no-repeat;
+  background-size: 50px auto;
+  background-position: 50px 400px;
+}
+
 .hero .hero-container .hero-text h6 {
   font-size: 17px;
   color: #e7332b;
@@ -98,7 +105,7 @@ header nav .nav-menu .click:hover {
 }
 
 .hero .hero-container .hero-text h1 {
-  font-size: 50px;
+  font-size: 49px;
   font-weight: 600;
 }
 
@@ -117,13 +124,15 @@ header nav .nav-menu .click:hover {
   margin-top: 17px;
 }
 
-.hero .hero-container .hero-text .face {
-  width: 55px;
-  margin-left: -220px;
-  margin-top: 40px;
+.hero .hero-container .hero-text .enroll {
+  background-image: url(../images/training-images/section1wire.svg);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: 320px 70px;
+  padding-bottom: 140px;
 }
 
-.hero .hero-container .hero-text a button {
+.hero .hero-container .hero-text .enroll a button {
   padding: 8px 35px;
   color: white;
   background-color: #e7332b;
@@ -131,13 +140,6 @@ header nav .nav-menu .click:hover {
   border-radius: 30px;
   font-size: 18px;
   margin-top: 30px;
-  margin-left: 200px;
-}
-
-.hero .hero-container .hero-text .wire {
-  width: 80px;
-  margin-bottom: -140px;
-  margin-left: -50px;
 }
 
 .powered {
@@ -569,13 +571,62 @@ footer .bottom a {
   }
   header nav .nav-menu .nav-link {
     margin-left: 0;
+    margin-right: 5px;
     padding: 8px 13px;
+  }
+  .hero .hero-container .female img {
+    width: 300px;
+    margin: 0;
+  }
+  .hero .hero-container .hero-text h1 {
+    font-size: 42px;
   }
 }
 
 @media (max-width: 992px) {
   header nav .nav-menu .nav-item {
     display: none;
+  }
+  header nav .nav-menu .click .thumbs div {
+    border-width: 12px;
+  }
+  header nav .nav-menu .click .thumbs p {
+    font-size: 17px;
+    padding-right: 28px;
+  }
+  .hero {
+    padding-top: 100px;
+  }
+  .hero .hero-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero .hero-container .female {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero-container .female img {
+    width: 100%;
+    max-width: 660px;
+  }
+  .hero .hero-container .male {
+    display: none;
+  }
+  .hero .hero-container .hero-text {
+    background-position: 50px 340px;
+    background-size: 54px auto;
+  }
+  .hero .hero-container .hero-text h1 {
+    font-size: 44px;
+  }
+  .hero .hero-container .hero-text .enroll {
+    background-position: 400px 100px;
+    background-size: 95px auto;
+    padding-bottom: 190px;
   }
 }
 
@@ -586,6 +637,32 @@ footer .bottom a {
   }
   header nav .logo {
     width: 170px;
+  }
+  .hero {
+    padding-top: 100px;
+  }
+  .hero .hero-container .hero-text {
+    background-image: none;
+  }
+  .hero .hero-container .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero .hero-container .hero-text .line {
+    width: 100px;
+    margin-left: 0;
+    margin-top: -33px;
+  }
+  .hero .hero-container .hero-text p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .hero .hero-container .hero-text .enroll {
+    background-position: 250px 70px;
+    background-size: 70px auto;
+    padding-bottom: 120px;
+  }
+  .hero .hero-container .hero-text .enroll a button {
+    padding: 8px 20px;
   }
 }
 
@@ -602,6 +679,25 @@ footer .bottom a {
     padding-left: 4px;
     font-size: 16px;
     margin-left: -9px;
+  }
+  .hero .hero-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero .hero-container .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero .hero-container .hero-text p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .hero .hero-container .hero-text .enroll {
+    background-position: 200px 85px;
+    background-size: 70px auto;
+    padding-bottom: 120px;
+  }
+  .hero .hero-container .hero-text .enroll a button {
+    padding: 8px 20px;
   }
 }
 
