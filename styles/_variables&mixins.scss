@@ -8,7 +8,8 @@ $mainbgc: #fffdf5;
 $pinkish: #fffafa;
 $white: white;
 $grey: #585858;
-$desktop: 1130px;
+$desktop: 1199;
+$desktop1: 1130px;
 $tab: 992px;
 $tablet: 768px;
 $phone1: 590px;
@@ -21,6 +22,13 @@ $sphone: 336px;
 
 @mixin desktop {
     @media (max-width: #{$desktop}) {
+        @content;
+    }
+
+}
+
+@mixin desktop1 {
+    @media (max-width: #{$desktop1}) {
         @content;
     }
 
