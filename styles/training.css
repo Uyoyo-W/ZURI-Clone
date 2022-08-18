@@ -441,7 +441,7 @@ header nav .nav-menu .click:hover {
 
 .section6 {
   background-color: #fffdf5;
-  color: black;
+  color: #1b1a20;
 }
 
 .section6 .section6-container {
@@ -475,6 +475,7 @@ header nav .nav-menu .click:hover {
 }
 
 .section6 .section6-container .paths .path {
+  width: 100%;
   background-color: black;
   color: white;
   border-radius: 70px;
@@ -500,6 +501,16 @@ header nav .nav-menu .click:hover {
   margin-left: -27px;
 }
 
+.section6 .section6-container .paths .path ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.section6 .section6-container .paths .path ul li img {
+  width: 15px;
+  margin-left: 6px;
+}
+
 .section6 .section6-container .paths .path1 {
   margin-right: 45px;
 }
@@ -508,6 +519,12 @@ header nav .nav-menu .click:hover {
   margin-left: -27px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.section6 .section6-container .paths .path1 .hour1 {
+  width: 100px;
+  margin-left: 180px;
+  margin-top: -70px;
 }
 
 .section6 .section6-container .paths .path2 ul li {
@@ -759,10 +776,6 @@ footer .bottom a {
     padding: 8px 20px;
   }
   .powered .ingressive .text1 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .powered .ingressive .text2 {
     padding-left: 0px;
     padding-right: 0px;
   }
