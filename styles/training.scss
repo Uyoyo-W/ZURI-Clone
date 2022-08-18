@@ -469,7 +469,7 @@ header {
 //SECTION6
 .section6{
     background-color: $mainbgc;
-    color: black;
+    color: #1b1a20;
     .section6-container{
         padding: 50px 50px;
         .text{
@@ -493,6 +493,7 @@ header {
         .paths{
             @include padding-lr(60px, 60px);
             .path{
+                width: 100%;
                 background-color: black;
                 color: $white;
                 border-radius: 70px;
@@ -512,11 +513,23 @@ header {
                 ul{
                     li{
                         margin-left: -27px;
+                        a{
+                            color: $white;
+                            text-decoration: underline;
+                        }
+                        img{
+                            width: 15px;
+                            margin-left: 6px;
+                        }
                     }
                     
                 }
             }
             .path1{
+                // background-image: url(../images/training-images/hour.png);
+                // background-repeat: no-repeat;
+                // background-size: 100px auto;
+                // background-position: 400px 570px;
                 margin-right: 45px;
                 ul{
                     p{
@@ -526,6 +539,12 @@ header {
                     }
 
                 }
+                .hour1{
+                    width: 100px;
+                    margin-left: 180px;
+                    margin-top: -70px;
+                }
+
             }
             .path2{
                 ul{
@@ -871,9 +890,6 @@ footer{
         .ingressive{
             .text1{
             @include padding-lr(0px, 0px);
-            }
-            .text2{
-                @include padding-lr(0px, 0px);
             }
         }
     }
