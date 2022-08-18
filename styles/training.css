@@ -441,14 +441,23 @@ header nav .nav-menu .click:hover {
 
 .section6 {
   background-color: #fffdf5;
-  color: #1b1a20;
+  color: black;
 }
 
 .section6 .section6-container {
   padding: 50px 50px;
+  background-image: url(../images/training-images/Star1.svg);
+  background-repeat: no-repeat;
+  background-size: 135px;
+  background-position: 92% 5%;
 }
 
 .section6 .section6-container .text {
+  background-image: url(../images/training-images/section7wire.svg);
+  background-repeat: no-repeat;
+  background-size: 137px;
+  background-position: 15% 0%;
+  padding-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -467,19 +476,33 @@ header nav .nav-menu .click:hover {
 .section6 .section6-container .text p {
   font-size: 18px;
   margin-bottom: 60px;
+  color: #333333;
 }
 
 .section6 .section6-container .paths {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section6 .section6-container .paths .path {
-  width: 100%;
-  background-color: black;
+  width: 50%;
+  background-color: #1b1a20;
   color: white;
   border-radius: 70px;
   padding: 70px 50px 50px 50px;
+  margin-top: 40px;
+}
+
+.section6 .section6-container .paths .path h6 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
 }
 
 .section6 .section6-container .paths .path h4 {
@@ -489,12 +512,6 @@ header nav .nav-menu .click:hover {
 
 .section6 .section6-container .paths .path .p1 {
   margin-top: 26px;
-}
-
-.section6 .section6-container .paths .path h6 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-top: 10px;
 }
 
 .section6 .section6-container .paths .path ul li {
@@ -512,7 +529,11 @@ header nav .nav-menu .click:hover {
 }
 
 .section6 .section6-container .paths .path1 {
-  margin-right: 45px;
+  background-image: url(../images/training-images/hour.png);
+  background-repeat: no-repeat;
+  background-size: 106px;
+  background-position: 92% 92%;
+  margin-right: 40px;
 }
 
 .section6 .section6-container .paths .path1 ul p {
@@ -521,10 +542,11 @@ header nav .nav-menu .click:hover {
   margin-bottom: 0px;
 }
 
-.section6 .section6-container .paths .path1 .hour1 {
-  width: 100px;
-  margin-left: 180px;
-  margin-top: -70px;
+.section6 .section6-container .paths .path2 {
+  background-image: url(../images/training-images/time.png);
+  background-repeat: no-repeat;
+  background-size: 185px;
+  background-position: 89% 87%;
 }
 
 .section6 .section6-container .paths .path2 ul li {
@@ -604,6 +626,13 @@ footer .bottom a {
   }
   .powered .ingressive .text2 p {
     font-size: 19px;
+  }
+  .section6 .section6-container .text h4 {
+    font-size: 30px;
+  }
+  .section6 .section6-container .paths {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -685,6 +714,37 @@ footer .bottom a {
     padding-left: 0;
     padding-top: 30px;
   }
+  .section6 .section6-container {
+    background-size: 90px;
+  }
+  .section6 .section6-container .text {
+    background-size: 100px;
+    margin-bottom: 0;
+  }
+  .section6 .section6-container .text h6 {
+    font-size: 18px;
+  }
+  .section6 .section6-container .text p {
+    margin-bottom: 0;
+  }
+  .section6 .section6-container .text h4 {
+    font-size: 30px;
+  }
+  .section6 .section6-container .paths {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section6 .section6-container .paths .path {
+    width: 100%;
+  }
 }
 
 @media (max-width: 590px) {
@@ -740,6 +800,41 @@ footer .bottom a {
     font-size: 17px;
     padding-top: 30px;
   }
+  .section6 .section6-container {
+    padding: 50px 20px;
+    background-size: 50px;
+    background-position: 92% 3%;
+  }
+  .section6 .section6-container .text {
+    background-size: 80px;
+    background-position: 3% 0%;
+  }
+  .section6 .section6-container .text h4 {
+    font-size: 24px;
+  }
+  .section6 .section6-container .text p {
+    font-size: 16px;
+  }
+  .section6 .section6-container .paths {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section6 .section6-container .paths .path {
+    width: 100%;
+  }
+  .section6 .section6-container .paths .path1 {
+    background-size: 80px;
+  }
+  .section6 .section6-container .paths .path2 {
+    background-size: 130px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -778,6 +873,9 @@ footer .bottom a {
   .powered .ingressive .text1 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .section6 .section6-container .text p {
+    font-size: 16px;
   }
 }
 
