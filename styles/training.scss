@@ -603,29 +603,88 @@ header {
 //SECTION7
 .section7{
     color: $white;
-    .section7-container{
-        padding: 70px 0;
-        background-color: $red;
-        margin: 50px 40px;
-        border-radius: 27px;
-        h4{
-            font-size: 54px;
-            font-weight: 600;
+    .bg-top{
+        img{
+            width: 9%;
+            margin: 20px 0px -20px 50px;
         }
-        a{
-            button{
-                font-size: 18px;
-                padding: 10px 40px;
-                // margin: 30px 0;
-                margin-bottom: 40px;
-                margin-top: 50px;
-                color: $red;
-                background-color: $white;
-                border: 1px solid transparent;
-                border-radius: 30px;
-                box-shadow: 0 1px 4px -1.5px black;
+    }
+    .section7-container{
+        background-color: $red;
+        margin: 50px 60px;
+        border-radius: 27px;
+        background-image: url(../images/training-images/round.svg);
+        background-repeat: no-repeat;
+        background-size: 160px;
+        background-position: 14% 10%;
+        // margin-bottom: 400px;
+        .top{
+            padding-top: -70px;
+            .bend{
+                position: absolute;
+                right: 5%;
+                width: 11%;
             }
         }
+        .text{
+            padding: 70px 0px;
+            padding-bottom: 0;
+            p{
+                font-size: 18px;
+            }
+            h4{
+                font-size: 54px;
+                font-weight: 600;
+            }
+            a{
+                button{
+                    font-size: 18px;
+                    padding: 10px 40px;
+                    // margin: 30px 0;
+                    margin-bottom: 0px;
+                    margin-top: 50px;
+                    color: $red;
+                    background-color: $white;
+                    border: 1px solid transparent;
+                    border-radius: 30px;
+                    box-shadow: 0 1px 4px -1.5px black;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            .img1{
+                // position: absolute;
+                // right: 7%;
+                // width: 11%;
+                // padding-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                // justify-content: start;
+                img{
+                    width: 120%;
+                }
+            }
+            .img2{
+                // position: absolute;
+                // // right: 7%;
+                // right: 0%;
+                // width: 11%;
+                // padding-top: 50px;
+                width: 180%;
+                display: flex;
+                justify-content: flex-end;
+
+                img{
+                    // width:%;
+                    width: 100%;
+                    max-width: 150px;
+                    max-height: 130px;
+                    right: 5%;
+                }
+            }
+        }
+       
     }
 }
 
@@ -710,7 +769,20 @@ footer{
             }
         }
     }
+    .section7{
+        .section7-container{
+            margin-left: 40px;
+            margin-right: 40px;
+            background-size: 130px;
+            background-position: 14% 25%;
+            .text{
+                h4{
+                font-size: 50px;
 
+                }
+            }
+        }
+    }
 }
 
 @include tab {
@@ -852,10 +924,51 @@ footer{
             }
         }
     }
+   
+    .section7{
+        .section7-container{
+            margin-left: 31px;
+            margin-right: 31px;
+            // background-size: 110px;
+            background-size: 13%;
+            background-position: 9% 12%;
+            .text{
+                h4{
+                font-size: 39px;
+                margin-bottom: 40px;
+                }
+                a{
+                    button{
+                        margin-top: 0;
+                        margin-bottom: -80px;
+                        padding: 8px 37px;
+                    }
+                }
+            }
+            .bottom{
+                .img1{
+                    margin-top: 30px;
+                    img{
+                    // max-width: 100px;
+                    // height: 90px;
+                    }
+                }
+                .img2{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
 }
 
 
-
+@include tablet{
+    .section7{
+        .bg-top{
+            display: none;
+        }
+    }
+}
 
 @include phone1 {
     header{
@@ -971,6 +1084,17 @@ footer{
             }
         }
     }
+    .section7{
+        .section7-container{
+            margin-left: 10px;
+            margin-right: 10px;
+            .text{
+                h4{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
 }
 
 @include phone{
@@ -1043,6 +1167,38 @@ footer{
                     font-size: 16px;
                 }
             }
+        }
+    }
+    .section7{
+        .section7-container{
+            background-size: 20%;
+            .top{
+                .bend{
+                    width: 22%;
+
+                }            
+            }
+            .text{
+                margin-left: 35px;
+                margin-right: 35px;
+                h4{
+                    font-size: 26px;
+                }
+                a{
+                    button{
+                        font-size: 16px;
+                    }
+                }
+            }
+           .bottom{
+                .img2{
+                    margin-top: 50px;
+                    img{
+                        width: 80px;
+                        height: 70px;
+                    }
+                }
+           }
         }
     }
 }

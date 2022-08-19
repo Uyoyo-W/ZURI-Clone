@@ -561,22 +561,49 @@ header nav .nav-menu .click:hover {
   color: white;
 }
 
-.section7 .section7-container {
-  padding: 70px 0;
-  background-color: #e7332b;
-  margin: 50px 40px;
-  border-radius: 27px;
+.section7 .bg-top img {
+  width: 9%;
+  margin: 20px 0px -20px 50px;
 }
 
-.section7 .section7-container h4 {
+.section7 .section7-container {
+  background-color: #e7332b;
+  margin: 50px 60px;
+  border-radius: 27px;
+  background-image: url(../images/training-images/round.svg);
+  background-repeat: no-repeat;
+  background-size: 160px;
+  background-position: 14% 10%;
+}
+
+.section7 .section7-container .top {
+  padding-top: -70px;
+}
+
+.section7 .section7-container .top .bend {
+  position: absolute;
+  right: 5%;
+  width: 11%;
+}
+
+.section7 .section7-container .text {
+  padding: 70px 0px;
+  padding-bottom: 0;
+}
+
+.section7 .section7-container .text p {
+  font-size: 18px;
+}
+
+.section7 .section7-container .text h4 {
   font-size: 54px;
   font-weight: 600;
 }
 
-.section7 .section7-container a button {
+.section7 .section7-container .text a button {
   font-size: 18px;
   padding: 10px 40px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   margin-top: 50px;
   color: #e7332b;
   background-color: white;
@@ -584,6 +611,42 @@ header nav .nav-menu .click:hover {
   border-radius: 30px;
   -webkit-box-shadow: 0 1px 4px -1.5px black;
           box-shadow: 0 1px 4px -1.5px black;
+}
+
+.section7 .section7-container .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section7 .section7-container .bottom .img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section7 .section7-container .bottom .img1 img {
+  width: 120%;
+}
+
+.section7 .section7-container .bottom .img2 {
+  width: 180%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section7 .section7-container .bottom .img2 img {
+  width: 100%;
+  max-width: 150px;
+  max-height: 130px;
+  right: 5%;
 }
 
 footer {
@@ -633,6 +696,15 @@ footer .bottom a {
   .section6 .section6-container .paths {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .section7 .section7-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-size: 130px;
+    background-position: 14% 25%;
+  }
+  .section7 .section7-container .text h4 {
+    font-size: 50px;
   }
 }
 
@@ -745,6 +817,33 @@ footer .bottom a {
   .section6 .section6-container .paths .path {
     width: 100%;
   }
+  .section7 .section7-container {
+    margin-left: 31px;
+    margin-right: 31px;
+    background-size: 13%;
+    background-position: 9% 12%;
+  }
+  .section7 .section7-container .text h4 {
+    font-size: 39px;
+    margin-bottom: 40px;
+  }
+  .section7 .section7-container .text a button {
+    margin-top: 0;
+    margin-bottom: -80px;
+    padding: 8px 37px;
+  }
+  .section7 .section7-container .bottom .img1 {
+    margin-top: 30px;
+  }
+  .section7 .section7-container .bottom .img2 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section7 .bg-top {
+    display: none;
+  }
 }
 
 @media (max-width: 590px) {
@@ -835,6 +934,13 @@ footer .bottom a {
   .section6 .section6-container .paths .path2 {
     background-size: 130px;
   }
+  .section7 .section7-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .section7 .section7-container .text h4 {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -876,6 +982,29 @@ footer .bottom a {
   }
   .section6 .section6-container .text p {
     font-size: 16px;
+  }
+  .section7 .section7-container {
+    background-size: 20%;
+  }
+  .section7 .section7-container .top .bend {
+    width: 22%;
+  }
+  .section7 .section7-container .text {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .section7 .section7-container .text h4 {
+    font-size: 26px;
+  }
+  .section7 .section7-container .text a button {
+    font-size: 16px;
+  }
+  .section7 .section7-container .bottom .img2 {
+    margin-top: 50px;
+  }
+  .section7 .section7-container .bottom .img2 img {
+    width: 80px;
+    height: 70px;
   }
 }
 
