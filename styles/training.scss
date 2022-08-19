@@ -67,7 +67,7 @@ header {
     @include padding-lr(70px, 70px);
 
         .female{
-            img {     
+            img {
                 width: 370px;
             // margin-bottom: -100px;
             }
@@ -117,7 +117,7 @@ header {
             //     width: 50px;
             //     margin-left: 0px;
             //     margin-top: 0px;
-                
+
             // }
            .enroll{
                 background-image: url(../images/training-images/section1wire.svg);
@@ -135,7 +135,7 @@ header {
                     font-size: 18px;
                     // margin: 0px 80px;
                     margin-top: 30px;
-                   
+
                 }
             }
            }
@@ -186,7 +186,7 @@ header {
         @include padding-lr(40px, 40px);
 
             .text{
-                
+
                 h6 {
                     font-size: 24px;
                     color: $red;
@@ -263,7 +263,7 @@ header {
                 }
                 .feature1{
                     color: $white;
-                    
+
                 }
 
 
@@ -525,7 +525,7 @@ header {
                 .p1{
                     margin-top: 26px;
                 }
-                
+
                 ul{
                     li{
                         margin-left: -27px;
@@ -538,7 +538,7 @@ header {
                             margin-left: 6px;
                         }
                     }
-                    
+
                 }
             }
             .path1{
@@ -551,7 +551,7 @@ header {
                 background-size: 106px;
                 background-position: 92% 92%;
                 margin-right: 40px;
-                
+
                 ul{
                     p{
                         margin-left: -27px;
@@ -592,7 +592,7 @@ header {
                 //         max-width: 185px;
                 //         margin-left: 40px;
                 //         margin-top: -60px;
-                       
+
                 //     }
                 // }
             }
@@ -684,7 +684,7 @@ header {
                 }
             }
         }
-       
+
     }
 }
 
@@ -694,18 +694,44 @@ footer{
     .footer-container{
         @include padding-lr(50px, 50px);
         @include padding-tb(50px, 20px);
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .socials{
+                a{
+                    img{
+                        padding-right: 5px;
+                    }
+                    .youtube{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 38px;
+            .text{
+                a{
+                    color: #1a1b20;
+                }
+                .t1{
+                    padding-right: 16px;
+                }
+            }
+
+       }
     }
-    .bottom{
-         a{
-             color: black
-         }
-    }
+
 }
 
 
 //MEDIA QUERIES
 @include desktop{
-    
+
 }
 
 @include desktop1 {
@@ -737,7 +763,7 @@ footer{
                 h1{
                     font-size: 42px;
                 }
-                
+
             }
         }
     }
@@ -748,7 +774,7 @@ footer{
                     font-size: 20px;
                 }
             }
-    
+
             .text2{
                 p{
                     font-size: 19px;
@@ -823,11 +849,11 @@ footer{
                     //  margin: 0px 30px;
                     width: 100%;
                     max-width: 660px;
-                    
+
                     // margin: 0 80px;
                     // margin-left: 60px;
                     //  margin: 0;
-                    
+
                         // height: 500px;
                 }
             }
@@ -869,7 +895,7 @@ footer{
                     max-width: 300px;
                 }
             }
-    
+
             .text2{
                 p{
                     font-size: 18px;
@@ -898,7 +924,7 @@ footer{
                     font-size: 30px;
                 }
             }
-           
+
             .paths{
                 @include padding-lr(0px, 0px);
                 padding-top: 20px;
@@ -907,15 +933,15 @@ footer{
                 flex-direction: column;
                 .path{
                     width: 100%;
-                   
+
                 }
                 .path1{
-                    
+
                 //    .hour{
                 //     // display: flex;
                 //     // align-items: flex-end;
                 //     // justify-content: end;
-                    
+
                 //         img{
                 //             margin-left: 380px;
                 //         }
@@ -924,7 +950,7 @@ footer{
             }
         }
     }
-   
+
     .section7{
         .section7-container{
             margin-left: 31px;
@@ -967,6 +993,58 @@ footer{
         .bg-top{
             display: none;
         }
+    }
+    footer{
+        .footer-container{
+            @include padding-lr(0px, 0px);
+            .top{
+                display: flex;
+                flex-direction: column;
+                .logo{
+                    img{
+                    width: 280px;
+
+                    }
+                }
+                .socials{
+                    padding-top: 25px;
+                    a{
+                        img{
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 25px;
+                p{
+                    width: 95%;
+                    margin-top: 20px;
+                    border-top: 1px solid rgba(0, 0, 0, 0.12);
+                    text-align: center;
+                    padding-top: 20px;
+                }
+                .text{
+                    flex-direction: column-reverse;
+                    .t1{
+                        padding-right: 0;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        
+                    }
+                    // hr{
+                    //     border: px solid black;
+                    // }
+                    .t2{
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                    }
+                }
+           }
+        }
+
     }
 }
 
@@ -1027,7 +1105,7 @@ footer{
                     max-width: 200px;
                 }
             }
-    
+
             .text2{
                 p{
                     font-size: 17px;
@@ -1066,7 +1144,7 @@ footer{
                 //         img{
                 //           width: 100%;
                 //           min-width: 70px;
-                          
+
                 //         }
                 //     }
                 }
@@ -1077,7 +1155,7 @@ footer{
                     //        width: 100%;
                     //        max-width: 150px;
                     //        min-width: 70px;
-                           
+
                     //      }
                     //  }
                  }
@@ -1133,7 +1211,7 @@ footer{
                 h1{
                     font-size: 28px;
                 }
-                
+
                 p{
                     font-size: 16px;
                     padding: 0;
@@ -1176,7 +1254,7 @@ footer{
                 .bend{
                     width: 22%;
 
-                }            
+                }
             }
             .text{
                 margin-left: 35px;
