@@ -660,8 +660,45 @@ footer .footer-container {
   padding-bottom: 20px;
 }
 
-footer .bottom a {
-  color: black;
+footer .footer-container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .top .socials a img {
+  padding-right: 5px;
+}
+
+footer .footer-container .top .socials a .youtube {
+  padding-right: 0;
+}
+
+footer .footer-container .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 38px;
+}
+
+footer .footer-container .bottom .text a {
+  color: #1a1b20;
+}
+
+footer .footer-container .bottom .text .t1 {
+  padding-right: 16px;
 }
 
 @media (max-width: 1130px) {
@@ -843,6 +880,60 @@ footer .bottom a {
 @media (max-width: 768px) {
   .section7 .bg-top {
     display: none;
+  }
+  footer .footer-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  footer .footer-container .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-container .top .logo img {
+    width: 280px;
+  }
+  footer .footer-container .top .socials {
+    padding-top: 25px;
+  }
+  footer .footer-container .top .socials a img {
+    padding-right: 0px;
+  }
+  footer .footer-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 25px;
+  }
+  footer .footer-container .bottom p {
+    width: 95%;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding-top: 20px;
+  }
+  footer .footer-container .bottom .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-container .bottom .text .t1 {
+    padding-right: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  footer .footer-container .bottom .text .t2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 
