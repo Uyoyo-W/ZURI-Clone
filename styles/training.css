@@ -407,16 +407,24 @@ header nav .nav-menu .click:hover {
 
 .section5 .section5-container .faqs {
   padding: 50px 100px;
+  color: #333333;
 }
 
 .section5 .section5-container .faqs .question {
-  border: 1px solid #787878;
-  padding: 30px 0px 10px 20px;
+  border: 1px solid rgba(66, 35, 114, 0.43);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 20px 10px 20px;
 }
 
 .section5 .section5-container .faqs .question p {
   font-size: 18px;
   font-weight: 600;
+  padding-right: 40px;
 }
 
 .section5 .section5-container .bottom {
@@ -428,7 +436,7 @@ header nav .nav-menu .click:hover {
   margin-right: 20px;
   margin-top: 20px;
   font-size: 18px;
-  color: #787878;
+  color: #333333;
 }
 
 .section5 .section5-container .bottom a button {
@@ -823,6 +831,10 @@ footer .footer-container .bottom .text .t1 {
     padding-left: 0;
     padding-top: 30px;
   }
+  .section5 .section5-container .faqs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .section6 .section6-container {
     background-size: 90px;
   }
@@ -878,6 +890,31 @@ footer .footer-container .bottom .text .t1 {
 }
 
 @media (max-width: 768px) {
+  .section5 .section5-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section5 .section5-container .faqs {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section5 .section5-container .faqs .question p {
+    font-size: 16px;
+  }
+  .section5 .section5-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section5 .section5-container .bottom p {
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 16px;
+  }
   .section7 .bg-top {
     display: none;
   }
@@ -1068,6 +1105,10 @@ footer .footer-container .bottom .text .t1 {
     padding: 8px 20px;
   }
   .powered .ingressive .text1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section5 .section5-container {
     padding-left: 0px;
     padding-right: 0px;
   }
