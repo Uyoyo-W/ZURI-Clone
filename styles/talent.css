@@ -76,10 +76,13 @@ header nav .nav-menu button {
 .hero {
   padding-top: 190px;
   padding: 150px 100px 20px 100px;
-}
-
-.hero {
   margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .hero-text {
@@ -88,10 +91,11 @@ header nav .nav-menu button {
 }
 
 .hero .hero-text h1 {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .hero .hero-text p {
+  padding-top: 30px;
   color: #787878;
   font-size: 19px;
 }
@@ -127,8 +131,13 @@ header nav .nav-menu button {
   background-color: #585858;
 }
 
+.hero .hero-img {
+  width: 35%;
+}
+
 .hero .hero-img img {
-  width: 404px;
+  width: 100%;
+  min-width: 404px;
 }
 
 .section2 {
@@ -312,5 +321,164 @@ footer .footer-container .bottom p, footer .footer-container .bottom a {
 footer .footer-container .bottom a:hover {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 1130px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero-text {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero .hero-text p {
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .hero .hero-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+  .hero .hero-img img {
+    width: 70%;
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header nav .nav-menu .nav-item a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 4px;
+  }
+  header nav .nav-menu .nav-item {
+    display: none;
+  }
+  header nav .nav-menu .hire {
+    display: block;
+  }
+  header nav .nav-menu .hire a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header nav .nav-menu .hire a button {
+    padding: 7px 50px;
+  }
+  .hero {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hero .hero-text p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .hero .hero-text .buttons button {
+    padding: 11px 25px;
+  }
+}
+
+@media (max-width: 590px) {
+  .hero {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero .hero-text p {
+    font-size: 16px;
+  }
+  .hero .hero-text .buttons button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  header nav {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  header nav .nav-menu .nav-item {
+    display: none;
+  }
+  header nav .nav-menu .hire {
+    display: block;
+  }
+  header nav .nav-menu .hire a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header nav .nav-menu .hire a button {
+    padding: 7px 23px;
+  }
+  .hero {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero .hero-text p {
+    font-size: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .hero .hero-text .buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero .hero-text .buttons button {
+    padding: 8px 25px;
+  }
+  .hero .hero-img {
+    width: 100%;
+  }
+  .hero .hero-img img {
+    width: 100%;
+    min-width: 278px;
+    max-width: 362px;
+  }
+}
+
+@media (max-width: 336px) {
+  .hero .hero-text .buttons {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .hero .hero-text .buttons button {
+    padding: 8px 17px;
+  }
 }
 /*# sourceMappingURL=talent.css.map */
