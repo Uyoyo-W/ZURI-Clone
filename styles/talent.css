@@ -151,7 +151,7 @@ header nav .nav-menu button {
 }
 
 .section2 .section2-container .text-country .section2-text h1 {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .section2 .section2-container .text-country .section2-text h1 span {
@@ -159,7 +159,7 @@ header nav .nav-menu button {
 }
 
 .section2 .section2-container .text-country .section2-text h6 {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 20px;
 }
 
@@ -361,6 +361,13 @@ footer .footer-container .bottom a:hover {
     width: 70%;
     max-width: 704px;
   }
+  .section2 .section2-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section2 .section2-container .text-country .section2-text h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -370,6 +377,41 @@ footer .footer-container .bottom a:hover {
   }
   header nav .nav-menu .nav-item a {
     margin-left: 0;
+  }
+  .section2 .section2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section2 .section2-container .text-country .section2-text {
+    text-align: center;
+  }
+  .section2 .section2-container .text-country .section2-text h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 40px;
+  }
+  .section2 .section2-container .text-country .countries {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section2 .section2-container .image {
+    margin-top: 50px;
+    padding-top: 24px;
   }
 }
 
@@ -404,6 +446,26 @@ footer .footer-container .bottom a:hover {
   .hero .hero-text .buttons button {
     padding: 11px 25px;
   }
+  .section2 .section2-container .text-country {
+    padding-top: 13px;
+  }
+  .section2 .section2-container .text-country .section2-text {
+    text-align: center;
+  }
+  .section2 .section2-container .text-country .section2-text h1 {
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+  .section2 .section2-container .text-country .section2-text h6, .section2 .section2-container .text-country .section2-text p {
+    font-size: 19px;
+  }
+  .section2 .section2-container .image {
+    width: 60%;
+  }
+  .section2 .section2-container .image img {
+    width: 100%;
+    min-width: 200px;
+  }
 }
 
 @media (max-width: 590px) {
@@ -417,6 +479,59 @@ footer .footer-container .bottom a:hover {
   }
   .hero .hero-text .buttons button {
     padding: 8px 25px;
+  }
+  .section2 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .section2 .section2-container .text-country .section2-text {
+    text-align: start;
+  }
+  .section2 .section2-container .text-country .section2-text h1 {
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section2 .section2-container .text-country .section2-text h6, .section2 .section2-container .text-country .section2-text p {
+    font-size: 16px;
+  }
+  .section2 .section2-container .text-country .countries {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .section2 .section2-container .text-country .countries div {
+    padding: 12px 12px;
+  }
+  .section2 .section2-container .text-country .countries div img {
+    width: 42px;
+  }
+  .section2 .section2-container .text-country .countries .ind img {
+    width: 34px;
+  }
+  .section2 .section2-container .text-country .countries .nig img {
+    width: 38px;
+  }
+  .section2 .section2-container .text-country .countries .germany {
+    padding: 15px 12px;
+  }
+  .section2 .section2-container .text-country .countries .germany img {
+    width: 38px;
+  }
+  .section2 .section2-container .text-country .countries .usa {
+    padding: 10px 12px;
+  }
+  .section2 .section2-container .text-country .countries .usa img {
+    width: 35px;
+  }
+  .section2 .section2-container .image {
+    width: 92%;
+  }
+  .section2 .section2-container .image img {
+    width: 100%;
+    min-width: 200px;
   }
 }
 
@@ -469,6 +584,66 @@ footer .footer-container .bottom a:hover {
     width: 100%;
     min-width: 278px;
     max-width: 362px;
+  }
+  .section2 {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .section2 .section2-container .text-country .section2-text {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .section2 .section2-container .text-country .section2-text h1 {
+    font-size: 26px;
+  }
+  .section2 .section2-container .text-country .section2-text h6, .section2 .section2-container .text-country .section2-text p {
+    font-size: 16px;
+  }
+  .section2 .section2-container .text-country .countries {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .section2 .section2-container .text-country .countries div {
+    padding: 7px 0px;
+    width: 20%;
+    margin-right: 10px;
+  }
+  .section2 .section2-container .text-country .countries div img {
+    width: 50%;
+  }
+  .section2 .section2-container .text-country .countries .eng img {
+    width: 70%;
+  }
+  .section2 .section2-container .text-country .countries .ind img {
+    width: 55%;
+  }
+  .section2 .section2-container .text-country .countries .nig img {
+    width: 23px;
+    width: 50%;
+  }
+  .section2 .section2-container .text-country .countries .germany {
+    padding: 8px 8px;
+  }
+  .section2 .section2-container .text-country .countries .germany img {
+    width: 23px;
+    width: 100%;
+  }
+  .section2 .section2-container .text-country .countries .usa {
+    padding: 8px 9px;
+  }
+  .section2 .section2-container .text-country .countries .usa img {
+    width: 23px;
+    width: 60%;
+  }
+  .section2 .section2-container .image {
+    width: 92%;
+  }
+  .section2 .section2-container .image img {
+    width: 100%;
+    min-width: 200px;
   }
 }
 
