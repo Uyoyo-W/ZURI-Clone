@@ -155,14 +155,14 @@ header {
             padding-top: 60px;
             .section2-text {
                 h1 {
-                    font-weight: 900;
+                    font-weight: 600;
                    span{
                     color: $red;
                    }
                 }
 
                 h6 {
-                    font-weight: 900;
+                    font-weight: 600;
                     font-size: 20px;
                 }
                 
@@ -173,7 +173,6 @@ header {
             }
 
             .countries {
-                
                 div {
                     background-color: #fff;
                     padding: 10px 10px;
@@ -384,6 +383,20 @@ footer {
             }
         }
     }
+
+    .section2{
+        .section2-container{
+            padding-left: 0;
+            padding-right: 0;
+            .text-country{
+                .section2-text{
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include tab{
@@ -400,6 +413,33 @@ footer {
                 // .hire{
                 //     display: block;
                 // }
+            }
+        }
+    }
+
+    .section2{
+        .section2-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .text-country{
+                .section2-text{
+                    text-align: center;
+                    h1{
+                        margin-right: 20px;
+                        margin-left: 20px;
+                        line-height: 40px;
+                    }
+                }
+                .countries{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .image{
+                margin-top: 50px;
+                padding-top: 24px;
             }
         }
     }
@@ -443,6 +483,33 @@ footer {
             }
         }
     }
+
+    .section2{
+        .section2-container{
+            .text-country{
+                padding-top: 13px;
+                .section2-text{
+                    text-align: center;
+                    h1{
+                        line-height: 48px;
+                        margin-bottom: 10px;
+                    }
+                    h6, p{
+                        font-size: 19px;
+                    }
+                }
+            }
+            .image{
+                width: 60%;
+
+                img{
+                    width: 100%;
+                    min-width: 200px;
+                    // max-width: 400px;
+                }
+            }
+        }
+    }
 }
 
 @include phone1{
@@ -457,6 +524,73 @@ footer {
             .buttons{
                 button{
                     padding: 8px 25px
+                }
+            }
+        }
+    }
+
+    .section2{
+        @include padding-lr(35px, 35px);
+
+        .section2-container{
+
+            .text-country{
+                .section2-text{
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: flex-start;
+                    text-align: start;
+                    h1{
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        font-size: 28px;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    h6, p{
+                        font-size: 16px;
+                    }
+                }
+                .countries{
+                    justify-content: start;
+                    div{
+                        padding: 12px 12px;
+                        // text-align: start;
+                        img{
+                            width: 42px;
+                        }
+                    }
+                    .ind{
+                        img{
+                            width: 34px;
+                        }
+                    }
+                    .nig{
+                        img{
+                            width: 38px;
+                        }
+                    }
+                    .germany{
+                        padding: 15px 12px;
+                        img{
+                            width: 38px;
+                        }
+                    }
+                    .usa{
+                        padding: 10px 12px;
+                        img{
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+            .image{
+                width: 92%;
+
+                img{
+                    width: 100%;
+                    min-width: 200px;
+                    // max-width: 400px;
                 }
             }
         }
@@ -514,6 +648,84 @@ footer {
                 width: 100%;
                 min-width: 278px;
                 max-width: 362px;
+            }
+        }
+    }
+    .section2{
+        @include padding-lr(9px, 9px);
+
+        .section2-container{
+            .text-country{
+                .section2-text{
+                @include padding-lr(8px, 8px);
+                    h1{
+                        font-size: 26px;
+                    }
+                    h6, p{
+                        font-size: 16px;
+                    }
+                }
+                .countries{
+                    justify-content: start;
+                    @include padding-lr(8px, 8px);
+                    div{
+                        padding: 7px 0px;
+                        // text-align: start;
+                        width: 20%;
+                        margin-right: 10px;
+                        img{
+                            // width: 25px;
+                            width: 50%;
+                        }
+                    }
+                    .eng{
+                        img{
+                            // width: 20px;
+                            width: 70%;
+
+                        }
+                    }
+                    .ind{
+                        img{
+                            // width: 20px;
+                            width: 55%;
+
+                        }
+                    }
+                    .nig{
+                        img{
+                            width: 23px;
+                            width: 50%;
+
+                        }
+                    }
+                    .germany{
+                        padding: 8px 8px;
+                        img{
+                            width: 23px;
+                            width: 100%;
+
+                        }
+                    }
+                    .usa{
+                    
+                        padding: 8px 9px;
+                        img{
+                            width: 23px;
+                            width: 60%;
+
+                        }
+                    }
+                }
+            }
+            .image{
+                width: 92%;
+
+                img{
+                    width: 100%;
+                    min-width: 200px;
+                    // max-width: 400px;
+                }
             }
         }
     }
