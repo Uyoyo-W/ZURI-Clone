@@ -205,16 +205,14 @@ header {
 
     .section3-container {
         h1 {
-            font-weight: 900;
+            font-weight: 600;
             margin-bottom: 20px;
             margin-top: 50px;
-            font-size: 45px;
+            font-size: 40px;
         }
-
         span{
             color: $red;
         }
-
         .skills, .companies {
             div{
                 padding: 15px 17px;
@@ -233,12 +231,9 @@ header {
                 top: -15px;
             }
         }
-
         .skills {
             div {
             padding: 15px 28px;
-
-            
             }
         }
     }
@@ -397,6 +392,27 @@ footer {
             }
         }
     }
+
+    .section3{
+        .section3-container{
+            h1{
+                font-size: 30px;
+            }
+            .skill{
+                width: 40%;
+            }
+            .skills{
+                .ui{
+                    margin-left: 0;
+                }
+            }
+            .companies{
+                .git{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 @include tab{
@@ -440,6 +456,22 @@ footer {
             .image{
                 margin-top: 50px;
                 padding-top: 24px;
+            }
+        }
+    }
+
+    .section3{
+        @include padding-lr(60px, 60px);
+
+        .section3-container{
+            @include padding-lr(0px, 0px);
+            .skills, .companies{
+                div{
+                    font-size: 16px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    @include padding-lr(11px, 11px);
+                }
             }
         }
     }
@@ -506,6 +538,42 @@ footer {
                     width: 100%;
                     min-width: 200px;
                     // max-width: 400px;
+                }
+            }
+        }
+    }
+
+    .section3{
+        @include padding-lr(35px, 35px);
+        .section3-container{
+            h1{
+                text-align: center;
+            }
+            .skill{
+                width: 100%;
+            }
+            .skills, .companies{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    padding: 15px 17px;
+                    margin: 20px 10px;
+                    font-size: 16px;
+                    width: 30%;
+                    text-align: center;
+                    // display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .skills{
+                .frontend{
+                    margin-left: 0;
+                }
+            }
+            .companies{
+                .flutter{
+                    margin-left: 0;
                 }
             }
         }
@@ -592,6 +660,41 @@ footer {
                     min-width: 200px;
                     // max-width: 400px;
                 }
+            }
+        }
+    }
+
+    .section3{
+        @include padding-lr(30px, 30px);
+        .section3-container{
+            h1{
+                text-align: start;
+                font-size: 28px
+            }
+            .skills, .companies{
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    font-size: 15px;
+                    width: 47%;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin: 8px 0px;
+                }
+            }
+            .skills{
+                .frontend, .backend{
+                    font-size: 14px;
+                }
+            }
+            .companies{
+                .respell{
+                    font-size: 14px;
+                }
+                .career{
+                    font-size: 14px;
+                }
+
             }
         }
     }
@@ -725,6 +828,35 @@ footer {
                     width: 100%;
                     min-width: 200px;
                     // max-width: 400px;
+                }
+            }
+        }
+    }
+
+    .section3{
+        .section3-container{
+            h1{
+                font-size: 28px
+            }
+            .skills, .companies{
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+
+                }
+            }
+            .skills{
+                div{
+                    height: 70px;
+
+                }
+            }
+            .companies{
+                div{
+                    height: 57px;
+
                 }
             }
         }
