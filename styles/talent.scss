@@ -124,7 +124,7 @@ header {
             }
 
             .button1{
-                margin-right: 10px;
+                margin-right: 20px;
                 background-color: $red;
             }
 
@@ -247,15 +247,18 @@ header {
 
     .section4-container {
         h1 {
-            font-weight: 700;
-
+            font-weight: 600;
+            margin-bottom: 75px;
             span {
                 color: $red;
             }
         }
 
         .talents {
+            width: 100%;
             .talent {
+                padding-bottom: 20px;
+                width: 390px;
                 background-color: $white;
                 color: $black;
                 margin: 10px;
@@ -413,6 +416,14 @@ footer {
             }
         }
     }
+
+    .section4{
+        .section4-container{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @include tab{
@@ -471,6 +482,27 @@ footer {
                     margin-right: 5px;
                     margin-left: 5px;
                     @include padding-lr(11px, 11px);
+                }
+            }
+        }
+    }
+
+    .section4{
+        .section4-container{
+            .talents{
+                // width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 0 0;
+                .talent{
+                    // width: 100%;
+                }
+                // .talent2, .talent4, .talent5{
+                //     margin-left: 0;
+                //     margin-right: 0;
+                // }
+                .talent2{
+                    padding-bottom: 30px;
                 }
             }
         }
@@ -698,6 +730,19 @@ footer {
             }
         }
     }
+
+    .section4{
+        .section4-container{
+            h1{
+                font-size: 28px;
+            }
+            .buttons{
+                button{
+                    padding: 11px 30px;
+                }
+            }
+        }
+    }
 }
 
 @include phone{
@@ -733,14 +778,20 @@ footer {
             }
             .buttons{
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
+                // display: flex;
+                // justify-content: space-between;
                 // align-items: center;
                 // margin-left: 30px;
                 // margin-right: 30px;
-                @include padding-lr(10px, 10px);
-                button{
-                    padding: 8px 25px;
+                // @include padding-lr(10px, 10px);
+                a{
+                    button{
+                        font-size: 14px;
+                        padding: 8px 18px;
+                    }
+                    .button1{
+                        margin-right: 10px;
+                    }
                 }
             }
         }
@@ -857,6 +908,17 @@ footer {
                 div{
                     height: 57px;
 
+                }
+            }
+        }
+    }
+
+    .section4{
+        .section4-container{
+            .buttons{
+                button{
+                    font-size: 14px;
+                    padding: 11px 18px;
                 }
             }
         }
