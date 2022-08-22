@@ -194,10 +194,10 @@ header nav .nav-menu button {
 }
 
 .section3 .section3-container h1 {
-  font-weight: 900;
+  font-weight: 600;
   margin-bottom: 20px;
   margin-top: 50px;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .section3 .section3-container span {
@@ -368,6 +368,18 @@ footer .footer-container .bottom a:hover {
   .section2 .section2-container .text-country .section2-text h1 {
     font-size: 30px;
   }
+  .section3 .section3-container h1 {
+    font-size: 30px;
+  }
+  .section3 .section3-container .skill {
+    width: 40%;
+  }
+  .section3 .section3-container .skills .ui {
+    margin-left: 0;
+  }
+  .section3 .section3-container .companies .git {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -412,6 +424,21 @@ footer .footer-container .bottom a:hover {
   .section2 .section2-container .image {
     margin-top: 50px;
     padding-top: 24px;
+  }
+  .section3 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .section3 .section3-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section3 .section3-container .skills div, .section3 .section3-container .companies div {
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
@@ -465,6 +492,42 @@ footer .footer-container .bottom a:hover {
   .section2 .section2-container .image img {
     width: 100%;
     min-width: 200px;
+  }
+  .section3 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .section3 .section3-container h1 {
+    text-align: center;
+  }
+  .section3 .section3-container .skill {
+    width: 100%;
+  }
+  .section3 .section3-container .skills, .section3 .section3-container .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section3 .section3-container .skills div, .section3 .section3-container .companies div {
+    padding: 15px 17px;
+    margin: 20px 10px;
+    font-size: 16px;
+    width: 30%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section3 .section3-container .skills .frontend {
+    margin-left: 0;
+  }
+  .section3 .section3-container .companies .flutter {
+    margin-left: 0;
   }
 }
 
@@ -532,6 +595,38 @@ footer .footer-container .bottom a:hover {
   .section2 .section2-container .image img {
     width: 100%;
     min-width: 200px;
+  }
+  .section3 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section3 .section3-container h1 {
+    text-align: start;
+    font-size: 28px;
+  }
+  .section3 .section3-container .skills, .section3 .section3-container .companies {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section3 .section3-container .skills div, .section3 .section3-container .companies div {
+    font-size: 15px;
+    width: 47%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 8px 0px;
+  }
+  .section3 .section3-container .skills .frontend, .section3 .section3-container .skills .backend {
+    font-size: 14px;
+  }
+  .section3 .section3-container .companies .respell {
+    font-size: 14px;
+  }
+  .section3 .section3-container .companies .career {
+    font-size: 14px;
   }
 }
 
@@ -644,6 +739,27 @@ footer .footer-container .bottom a:hover {
   .section2 .section2-container .image img {
     width: 100%;
     min-width: 200px;
+  }
+  .section3 .section3-container h1 {
+    font-size: 28px;
+  }
+  .section3 .section3-container .skills div, .section3 .section3-container .companies div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
+  }
+  .section3 .section3-container .skills div {
+    height: 70px;
+  }
+  .section3 .section3-container .companies div {
+    height: 57px;
   }
 }
 
