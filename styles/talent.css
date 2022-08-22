@@ -123,7 +123,7 @@ header nav .nav-menu button {
 }
 
 .hero .hero-text .buttons .button1 {
-  margin-right: 10px;
+  margin-right: 20px;
   background-color: #e7332b;
 }
 
@@ -234,14 +234,21 @@ header nav .nav-menu button {
 }
 
 .section4 .section4-container h1 {
-  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 75px;
 }
 
 .section4 .section4-container h1 span {
   color: #e7332b;
 }
 
+.section4 .section4-container .talents {
+  width: 100%;
+}
+
 .section4 .section4-container .talents .talent {
+  padding-bottom: 20px;
+  width: 390px;
   background-color: white;
   color: #787878;
   margin: 10px;
@@ -380,6 +387,9 @@ footer .footer-container .bottom a:hover {
   .section3 .section3-container .companies .git {
     margin-left: 0;
   }
+  .section4 .section4-container h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -439,6 +449,18 @@ footer .footer-container .bottom a:hover {
     margin-left: 5px;
     padding-left: 11px;
     padding-right: 11px;
+  }
+  .section4 .section4-container .talents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0;
+  }
+  .section4 .section4-container .talents .talent2 {
+    padding-bottom: 30px;
   }
 }
 
@@ -628,6 +650,12 @@ footer .footer-container .bottom a:hover {
   .section3 .section3-container .companies .career {
     font-size: 14px;
   }
+  .section4 .section4-container h1 {
+    font-size: 28px;
+  }
+  .section4 .section4-container .buttons button {
+    padding: 11px 30px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -660,17 +688,13 @@ footer .footer-container .bottom a:hover {
   }
   .hero .hero-text .buttons {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
   }
-  .hero .hero-text .buttons button {
-    padding: 8px 25px;
+  .hero .hero-text .buttons a button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  .hero .hero-text .buttons a .button1 {
+    margin-right: 10px;
   }
   .hero .hero-img {
     width: 100%;
@@ -760,6 +784,10 @@ footer .footer-container .bottom a:hover {
   }
   .section3 .section3-container .companies div {
     height: 57px;
+  }
+  .section4 .section4-container .buttons button {
+    font-size: 14px;
+    padding: 11px 18px;
   }
 }
 
