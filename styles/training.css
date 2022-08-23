@@ -310,6 +310,16 @@ header nav .nav-menu .click:hover {
 .section3 .section3-container {
   padding: 80px 80px;
   padding-right: 30px;
+  padding-bottom: 120px;
+  padding-top: 60px;
+}
+
+.section3 .section3-container .first {
+  width: 40%;
+}
+
+.section3 .section3-container .first .text {
+  padding-top: 90px;
 }
 
 .section3 .section3-container .first .text .p1 {
@@ -340,26 +350,57 @@ header nav .nav-menu .click:hover {
           box-shadow: 0 1px 4px -1.5px black;
 }
 
+.section3 .section3-container .first .perks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
 .section3 .section3-container .first .perks .perk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid white;
   border-radius: 40px;
-  padding: 6px 12px;
-  padding-right: 9px;
+  padding: 8px 10px;
+  padding-left: 15px;
+  width: 46%;
+  margin: 20px 7px;
+  margin-left: 0;
+  margin-right: 20px;
 }
 
 .section3 .section3-container .first .perks .perk img {
-  width: 50px;
+  width: 100%;
+  max-width: 50px;
+  min-width: 48px;
+  margin-right: 10px;
 }
 
 .section3 .section3-container .first .perks .perk p {
-  text-align: center;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-bottom: 0;
   font-size: 18px;
 }
 
+.section3 .section3-container .first .perks .perk2, .section3 .section3-container .first .perks .perk4 {
+  margin-right: 0;
+}
+
+.section3 .section3-container .second {
+  width: 60%;
+}
+
 .section3 .section3-container .second img {
-  width: 700px;
+  width: 94%;
 }
 
 .section4 {
@@ -857,6 +898,41 @@ footer .footer-container .bottom .text .t1 {
   .section2 .section2-container .features .feature {
     width: 46%;
   }
+  .section3 .section3-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section3 .section3-container .first {
+    width: 100%;
+  }
+  .section3 .section3-container .first .text h6 {
+    font-size: 20px;
+  }
+  .section3 .section3-container .first .text h4 {
+    font-size: 30px;
+    padding-right: 0;
+    padding-bottom: 0px;
+  }
+  .section3 .section3-container .first .perks {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks .perk {
+    width: 23%;
+  }
+  .section3 .section3-container .first .perks .perk2, .section3 .section3-container .first .perks .perk4 {
+    margin-right: 7px;
+  }
+  .section3 .section3-container .second {
+    width: 94%;
+  }
+  .section3 .section3-container .second img {
+    width: 100%;
+  }
   .section4 .section4-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -995,6 +1071,32 @@ footer .footer-container .bottom .text .t1 {
   .section2 .section2-container .top .text p {
     width: 100%;
   }
+  .section3 .section3-container .first {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section3 .section3-container .first .perks .perk {
+    width: 40%;
+  }
+  .section3 .section3-container .first .perks .perk1, .section3 .section3-container .first .perks .perk3 {
+    margin-right: 57px;
+  }
+  .section3 .section3-container .second {
+    width: 100%;
+  }
+  .section3 .section3-container .second img {
+    width: 100%;
+  }
   .section5 .section5-container .text {
     background-size: 100px;
   }
@@ -1074,6 +1176,20 @@ footer .footer-container .bottom .text .t1 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .section3 .section3-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .section3 .section3-container .first {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks {
+    width: 90%;
+  }
+  .section3 .section3-container .first .perks .perk {
+    width: 40%;
+    margin-top: 10px;
   }
   .section4 .section4-container .text h6 {
     font-size: 18px;
@@ -1267,6 +1383,29 @@ footer .footer-container .bottom .text .t1 {
     margin-top: 25px;
     margin-bottom: 26px;
   }
+  .section3 .section3-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .section3 .section3-container .first {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks .perk {
+    width: 47%;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .section3 .section3-container .first .perks .perk img {
+    min-width: 20px;
+    width: 30%;
+  }
+  .section3 .section3-container .first .perks .perk p {
+    font-size: 13px;
+  }
   .section4 .section4-container {
     padding-left: 3px;
     padding-right: 3px;
@@ -1379,6 +1518,16 @@ footer .footer-container .bottom .text .t1 {
     font-size: 28px;
     margin-top: 25px;
     margin-bottom: 26px;
+  }
+  .section3 .section3-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section3 .section3-container .first .perks {
+    width: 100%;
+  }
+  .section3 .section3-container .first .perks .perk {
+    width: 47%;
   }
   .section4 .section4-container {
     padding-left: 0px;

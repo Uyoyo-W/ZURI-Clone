@@ -299,8 +299,12 @@ header {
     .section3-container{
         padding: 80px 80px;
         padding-right: 30px;
+        padding-bottom: 120px;
+        padding-top: 60px;
         .first{
+            width: 40%;
             .text{
+                padding-top: 90px;
                .p1{
                     font-size: 18px;
                 }
@@ -328,26 +332,46 @@ header {
                 }
             }
             .perks{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
                 .perk{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
                     border: 2px solid $white;
                     border-radius: 40px;
-                    padding: 6px 12px;
-                    padding-right: 9px;
+                    padding: 8px 10px;
+                    padding-left: 15px;
+                    width: 46%;
+                    margin: 20px 7px ;
+                    margin-left: 0;
+                    margin-right: 20px;
+                    // padding-right: 9px;
                     img{
-                        width: 50px;
+                        width: 100%;
+                        max-width: 50px;
+                        min-width: 48px;
+                        margin-right: 10px;
                     }
                     p{
-                        text-align: center;
-                        margin-top: 15px;
-                        margin-left: 10px;
+                        // text-align: center;
+                        // margin-top: 15px;
+                        // margin-left: 10px;
+                        margin-bottom: 0;
                         font-size: 18px;
                     }
+                }
+                .perk2, .perk4{
+                    margin-right: 0;
                 }
             }
         }
         .second{
+            width: 60%;
             img{
-                width: 700px;
+                width: 94%;
+                // max-width: 700px;
             }
         }
     }
@@ -870,6 +894,51 @@ footer{
         }
     }
 
+    .section3{
+        .section3-container{
+            // @include padding-lr(15px, 15px);
+                // padding-left: 40px;
+            display: flex;
+            flex-direction: column;
+            .first{
+                width: 100%;
+                .text{
+                    h6 {
+                        font-size: 20px;
+                        // padding-left: 20px;
+                    }
+                    h4{
+                        font-size: 30px;
+                        padding-right: 0;
+                        padding-bottom: 0px;
+                    }
+                }
+                .perks{
+                    width: 100%;
+                    .perk{
+                        width: 23%;
+                        
+                    }
+                    .perk2, .perk4{
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .second{
+                width: 94%;
+
+                // width: 95%;
+                img{
+                width: 100%;
+
+                    // width: 500px
+                    // max-width: 500px
+                }
+            }
+            
+        }
+    }
+
     .section4{
         .section4-container{
             @include padding-lr(15px, 15px);
@@ -1036,6 +1105,40 @@ footer{
         }
     }
 
+    .section3{
+        .section3-container{
+            .first{
+                width: 100%;
+                .perks{
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .perk{
+                        width: 40%;
+                        // max-width: px;
+                        
+                    }
+                    .perk1, .perk3{
+                        margin-right: 57px;
+                    }
+                }
+            }
+            .second{
+                width: 100%;
+
+                // width: 95%;
+                img{
+                width: 100%;
+
+                    // width: 500px
+                    // max-width: 500px
+                }
+            }
+            
+        }
+    }
+
     .section5{
         .section5-container{
             .text{
@@ -1150,6 +1253,23 @@ footer{
                     width: 100%;
                     justify-content: start;
                     align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .section3{
+        .section3-container{
+            @include padding-lr(25px, 25px);
+            .first{
+                width: 100%;
+                .perks{
+                    width: 90%;
+                    .perk{
+                        width: 40%;
+                        // max-width: px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -1374,6 +1494,32 @@ footer{
         }
     }
 
+   .section3{
+        .section3-container{
+            @include padding-lr(25px, 25px);
+            .first{
+                width: 100%;
+                .perks{
+                    width: 100%;
+                    .perk{
+                        width: 47%;
+                        // max-width: px;
+                        margin-top: 10px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        img{
+                            min-width: 20px;
+                            width: 30%;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .section4{
         .section4-container{
             @include padding-lr(3px, 3px);
@@ -1548,6 +1694,26 @@ footer{
     }
    }
 
+   .section3{
+    .section3-container{
+        @include padding-lr(0px, 0px);
+        .first{
+            .perks{
+                width: 100%;
+                .perk{
+                    width: 47%;
+                    // max-width: px;
+                    // img{
+                    //     width: 10%;
+                    // }
+                }
+                .perk1, .perk3{
+                    // margin-right: 57px;
+                }
+            }
+        }
+    }
+}
    .section4{
         .section4-container{
             @include padding-lr(0px, 0px);
