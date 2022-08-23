@@ -368,11 +368,16 @@ header nav .nav-menu .click:hover {
 
 .section4 .section4-container {
   padding: 70px 50px;
+  padding-bottom: 0px;
+}
+
+.section4 .section4-container .text {
+  margin-left: 30px;
 }
 
 .section4 .section4-container .text h6 {
   color: #e7332b;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -380,25 +385,43 @@ header nav .nav-menu .click:hover {
   font-size: 40px;
   padding-right: 650px;
   font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.section4 .section4-container .areas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section4 .section4-container .areas .area {
   padding: 50px 30px;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
           box-shadow: 3px 3px 20px 7px #f5f3f3;
+  width: 31%;
+  height: 100%;
+  height: 330px;
+  margin: 11px;
+  -webkit-transition: top ease 0.4s;
+  transition: top ease 0.4s;
 }
 
 .section4 .section4-container .areas .area h6 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .section4 .section4-container .areas .area .courses img {
   margin-right: 12px;
-  margin-bottom: 30px;
 }
 
 .section4 .section4-container .areas .area .courses .html, .section4 .section4-container .areas .area .courses .css {
@@ -428,6 +451,16 @@ header nav .nav-menu .click:hover {
 .section4 .section4-container .areas .area p {
   color: #787878;
   padding: 10px 0px;
+  padding-top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section4 .section4-container .enroll a button {
@@ -824,6 +857,27 @@ footer .footer-container .bottom .text .t1 {
   .section2 .section2-container .features .feature {
     width: 46%;
   }
+  .section4 .section4-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section4 .section4-container .text {
+    margin-left: 30px;
+  }
+  .section4 .section4-container .text h6 {
+    font-size: 20px;
+  }
+  .section4 .section4-container .text h4 {
+    font-size: 30px;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+  .section4 .section4-container .areas {
+    width: 100%;
+  }
+  .section4 .section4-container .areas .area {
+    width: 46%;
+  }
   .section6 .section6-container .text h4 {
     font-size: 30px;
   }
@@ -1021,6 +1075,21 @@ footer .footer-container .bottom .text .t1 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .section4 .section4-container .text h6 {
+    font-size: 18px;
+  }
+  .section4 .section4-container .text p {
+    font-size: 24px;
+  }
+  .section4 .section4-container .areas .area {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .section5 .section5-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -1198,6 +1267,16 @@ footer .footer-container .bottom .text .t1 {
     margin-top: 25px;
     margin-bottom: 26px;
   }
+  .section4 .section4-container {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .section4 .section4-container .text {
+    margin-left: 5px;
+  }
+  .section4 .section4-container .text h4 {
+    font-size: 24px;
+  }
   .section5 .section5-container .text {
     background-size: 80px;
     background-position: 3% 0%;
@@ -1301,6 +1380,15 @@ footer .footer-container .bottom .text .t1 {
     margin-top: 25px;
     margin-bottom: 26px;
   }
+  .section4 .section4-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section4 .section4-container .areas .area {
+    height: 380px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
   .section5 .section5-container {
     padding-left: 0px;
     padding-right: 0px;
@@ -1339,6 +1427,9 @@ footer .footer-container .bottom .text .t1 {
   }
   header nav .nav-menu .click .thumbs p {
     font-size: 13px;
+  }
+  .section4 .section4-container .areas .area {
+    height: 425px;
   }
 }
 /*# sourceMappingURL=training.css.map */

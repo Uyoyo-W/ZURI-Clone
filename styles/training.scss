@@ -353,39 +353,61 @@ header {
     }
 }
 
-//SECTION3
+//SECTION4
 .section4{
     background-color: $mainbgc ;
     .section4-container{
         padding: 70px 50px;
+        padding-bottom: 0px;
         .text{
+            margin-left: 30px;
+
             h6{
                 color: $red;
-                font-size: 25px;
+                font-size: 24px;
                 font-weight: 500;
             }
             h4{
                 font-size: 40px;
                 padding-right: 650px;
                 font-weight: 600;
+                padding-bottom: 30px;
             }
         }
         .areas{
+            width: 100%;
+            // padding: 40px 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             .area{
                 padding: 50px 30px;
                 // background: rgb(175, 174, 127);
                 background-color: $white;
-                border-radius: 50px;
+                border-radius: 30px;
                 box-shadow: 3px 3px 20px 7px rgb(245, 243, 243);
+                width: 31%;
+                height: 100%;
+                height: 330px;
+                // max-height: 470px;
+                // height: 435px;
+                margin: 11px;
+                // width: 60%;
+                // padding-top: 70px;
+                transition: top ease 0.4s;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
                 h6{
-                    font-size: 19px;
+                    font-size: 20px;
                     font-weight: 600;
                     margin-bottom: 20px;
                 }
                 .courses{
                     img{
                         margin-right: 12px;
-                        margin-bottom: 30px;
+                        // margin-bottom: 30px;
 
                     }
                     .html, .css{
@@ -410,6 +432,10 @@ header {
                 p{
                     color: $black;
                     padding: 10px 0px;
+                    padding-top: 27px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
@@ -844,6 +870,31 @@ footer{
         }
     }
 
+    .section4{
+        .section4-container{
+            @include padding-lr(15px, 15px);
+            .text{
+                margin-left: 30px;
+                h6 {
+                    font-size: 20px;
+                    // padding-left: 20px;
+                }
+                h4{
+                    font-size: 30px;
+                    padding-right: 0;
+                    padding-bottom: 60px;
+                }
+            }
+            .areas{
+                width: 100%;
+                    .area{
+                        width: 46%;
+                       
+                    }
+               }
+        }
+    }
+
     .section6{
         .section6-container{
             .text{
@@ -1103,6 +1154,26 @@ footer{
             }
         }
     }
+
+    .section4{
+        .section4-container{
+            .text{
+                h6 {
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+            .areas{
+                .area{
+                    width: 100%;
+                    justify-content: start;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
     .section5{
         .section5-container{
             padding-left: 15px;
@@ -1302,6 +1373,20 @@ footer{
             }
         }
     }
+
+    .section4{
+        .section4-container{
+            @include padding-lr(3px, 3px);
+            .text{
+                margin-left: 5px;
+                h4{
+                    font-size: 24px;
+                }
+                
+            }
+        }
+    }
+
     .section5{
         .section5-container{
             .text{
@@ -1463,6 +1548,18 @@ footer{
     }
    }
 
+   .section4{
+        .section4-container{
+            @include padding-lr(0px, 0px);
+            .areas{
+                .area{
+                    height: 380px;
+                    margin-left: 3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+   }
     .section5{
         .section5-container{
             padding-left: 0px;
@@ -1539,4 +1636,14 @@ footer{
             }
         }
     }
+
+    .section4{
+        .section4-container{
+            .areas{
+                .area{
+                    height: 425px;
+                }
+            }
+        }
+   }
 }
