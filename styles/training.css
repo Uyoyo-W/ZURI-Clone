@@ -170,11 +170,26 @@ header nav .nav-menu .click:hover {
 .section2 .section2-container {
   padding-top: 50px;
   padding-bottom: 130px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .section2 .section2-container .top {
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.section2 .section2-container .top .text {
+  width: 60%;
 }
 
 .section2 .section2-container .top .text h6 {
@@ -187,56 +202,104 @@ header nav .nav-menu .click:hover {
   font-weight: 600;
 }
 
+.section2 .section2-container .top .image {
+  width: 30%;
+}
+
 .section2 .section2-container .top .image img {
   width: 200px;
 }
 
 .section2 .section2-container .features {
-  padding: 0;
-  margin: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.section2 .section2-container .features .feature-container {
-  padding: 40px 70px;
-}
-
-.section2 .section2-container .features .feature-container .feature {
+.section2 .section2-container .features .feature {
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: 100% 0;
+  width: 31%;
+  height: 100%;
+  max-height: 470px;
+  margin: 11px;
+  padding: 50px 40px;
+  padding-top: 70px;
   background-color: #fffdf5;
   border-radius: 30px;
   -webkit-box-shadow: 3px 3px 20px 7px #f5f3f3;
           box-shadow: 3px 3px 20px 7px #f5f3f3;
-  -webkit-transition: top ease 0.1s;
-  transition: top ease 0.1s;
-  width: 100%;
+  -webkit-transition: top ease 0.4s;
+  transition: top ease 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.section2 .section2-container .features .feature-container .feature img {
-  width: 130px;
-  margin-left: 158px;
-}
-
-.section2 .section2-container .features .feature-container .feature .text {
-  padding: 0px 40px;
-}
-
-.section2 .section2-container .features .feature-container .feature .text h1 {
-  font-size: 56px;
+.section2 .section2-container .features .feature .text h1 {
+  font-size: 60px;
   font-weight: 600;
 }
 
-.section2 .section2-container .features .feature-container .feature .text h3 {
+.section2 .section2-container .features .feature .text h3 {
   margin: 35px 0px 40px 0px;
   font-size: 36px;
 }
 
-.section2 .section2-container .features .feature-container .feature1, .section2 .section2-container .features .feature-container .feature2, .section2 .section2-container .features .feature-container .feature4, .section2 .section2-container .features .feature-container .feature5 {
-  background-color: #e7332b;
-  margin-bottom: 20px;
+.section2 .section2-container .features .feature .text p {
+  font-size: 18px;
 }
 
-.section2 .section2-container .features .feature-container .feature1 {
+.section2 .section2-container .features .feature:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.section2 .section2-container .features .feature1 {
   color: white;
+  background-image: url(../images/training-images/curve1.png);
+  background-color: #e7332b;
+}
+
+.section2 .section2-container .features .feature2 {
+  background-image: url(../images/training-images/curve.svg);
+}
+
+.section2 .section2-container .features .feature3 {
+  background-image: url(../images/training-images/curve3.svg);
+}
+
+.section2 .section2-container .features .feature4 {
+  background-image: url(../images/training-images/curve4.svg);
+}
+
+.section2 .section2-container .features .feature5 {
+  background-image: url(../images/training-images/curve5.svg);
+}
+
+.section2 .section2-container .features .feature5 .text p {
+  font-size: 17px;
+}
+
+.section2 .section2-container .features .feature6 {
+  background-image: url(../images/training-images/curve6.svg);
 }
 
 .section3 {
@@ -739,6 +802,28 @@ footer .footer-container .bottom .text .t1 {
   .powered .ingressive .text2 p {
     font-size: 19px;
   }
+  .section2 .section2-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section2 .section2-container .top .text {
+    margin-left: 30px;
+  }
+  .section2 .section2-container .top .text h6 {
+    font-size: 20px;
+  }
+  .section2 .section2-container .top .text p {
+    font-size: 30px;
+  }
+  .section2 .section2-container .top .image img {
+    width: 200px;
+  }
+  .section2 .section2-container .features {
+    width: 100%;
+  }
+  .section2 .section2-container .features .feature {
+    width: 46%;
+  }
   .section6 .section6-container .text h4 {
     font-size: 30px;
   }
@@ -835,6 +920,27 @@ footer .footer-container .bottom .text .t1 {
     padding-left: 0;
     padding-top: 30px;
   }
+  .section2 .section2-container .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .section2 .section2-container .top .text {
+    width: 90%;
+  }
+  .section2 .section2-container .top .text p {
+    width: 100%;
+  }
   .section5 .section5-container .text {
     background-size: 100px;
   }
@@ -897,6 +1003,24 @@ footer .footer-container .bottom .text .t1 {
 }
 
 @media (max-width: 768px) {
+  .section2 .section2-container .top .text h6 {
+    font-size: 18px;
+  }
+  .section2 .section2-container .top .text p {
+    font-size: 24px;
+  }
+  .section2 .section2-container .top .image {
+    display: none;
+  }
+  .section2 .section2-container .features .feature {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .section5 .section5-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -1042,6 +1166,38 @@ footer .footer-container .bottom .text .t1 {
     font-size: 17px;
     padding-top: 30px;
   }
+  .section2 .section2-container .top .text {
+    margin-left: 0;
+  }
+  .section2 .section2-container .top .text h6 {
+    font-size: 18px;
+  }
+  .section2 .section2-container .top .text p {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .section2 .section2-container .top .image {
+    display: none;
+  }
+  .section2 .section2-container .features .feature {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section2 .section2-container .features .feature .text h1 {
+    font-size: 44px;
+  }
+  .section2 .section2-container .features .feature .text h3 {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 26px;
+  }
   .section5 .section5-container .text {
     background-size: 80px;
     background-position: 3% 0%;
@@ -1126,6 +1282,24 @@ footer .footer-container .bottom .text .t1 {
   .powered .ingressive .text1 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .section2 .section2-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .section2 .section2-container .top .text {
+    width: 100%;
+  }
+  .section2 .section2-container .top .text p {
+    width: 100%;
+  }
+  .section2 .section2-container .features .feature .text h1 {
+    font-size: 44px;
+  }
+  .section2 .section2-container .features .feature .text h3 {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 26px;
   }
   .section5 .section5-container {
     padding-left: 0px;
