@@ -10,8 +10,13 @@
     <link rel="icon" type="image/x-icon" href="../images/index-images/Screenshot (300).png">
     <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e05cd6ec2.js" crossorigin="anonymous"></script>
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
 </head>
-<body>
+<body onload="load()">
     <header>
         <nav class=" d-flex align-items-center justify-content-between">
             <a href="../index.html" class="navbar-brand "><img src="../images/training-images/logo.svg" alt="Logo" class="logo"></a>
@@ -52,7 +57,7 @@
        </div>
     </div>
 
-    <div class="powered">
+    <div class="powered" id="about">
         <hr/>
         <div class="d-flex row justify-content-between align-items-center ingressive">
             <div class="col-lg-4 text1">
@@ -68,7 +73,7 @@
         <hr/>
     </div>
 
-    <div class="section2 container-fluid">
+    <div class="section2 container-fluid" id="why-us">
         <div class="section2-container">
             <div class="top">
                 <div class="text p-0">
@@ -168,7 +173,7 @@
         </div>
     </div>
 
-    <div class="container-fluid section4">
+    <div class="container-fluid section4" id="stacks">
         <div class="section4-container ">
             <div class="text ">
                 <h6>Scope Of Program</h6>
@@ -236,7 +241,7 @@
         </div>
     </div>
 
-    <div class=" container-fluid section5">
+    <div class=" container-fluid section5" id="faqs">
         <div class="section5-container">
             <hr/>
             <div class="text text-center">
