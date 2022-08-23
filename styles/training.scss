@@ -182,11 +182,15 @@ header {
     // background-color: $mainbgc;
     .section2-container{
         @include padding-tb(50px, 130px);
-        .top{
         @include padding-lr(40px, 40px);
-
+        .top{
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             .text{
-
+                width: 60%;
                 h6 {
                     font-size: 24px;
                     color: $red;
@@ -198,75 +202,91 @@ header {
                 }
             }
             .image {
+                width: 30%;
                 img{
                     width: 200px;
                 }
             }
         }
         .features{
-            padding: 0;
-            margin: 0;
+            // padding: 0;
+            // margin: 0;
             width: 100%;
-            .feature-container{
-                padding: 40px 70px;
-                .feature{
-                    // background-image: url(../images/training-images/curve3.svg);
-                    // background-repeat: no-repeat;
-                    // top: 0;
-                    // left: 0;
-                    // margin: 24px 0px 0px 24px;
-                    // padding: 40px 0px 60px 0px;
-                    background-color: $mainbgc;
-                    border-radius: 30px;
-                    box-shadow: 3px 3px 20px 7px rgb(245, 243, 243);
-                    // top: 0;
-                    transition: top ease 0.1s;
-                    // padding: 70px 50px;
-                    // margin-top: 30px;
-
-                    // margin: 30px 15px;
-                    // margin: 10px
-                    // width: 28%;
-                    //  margin-top: 10px;
-                    // margin-right: 10px;
-                    // margin: 10px;
-                    width: 100%;
-                    img{
-                        width: 130px;
-                        margin-left: 158px;
+            // padding: 40px 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // align-items: center;
+            .feature{
+                // background-image: url(../images/training-images/curve3.svg);
+                background-repeat: no-repeat;
+                background-size: 130px;
+                background-position: 100% 0;
+                width: 31%;
+                height: 100%;
+                max-height: 470px;
+                // height: 435px;
+                margin: 11px;
+                // width: 60%;
+                padding: 50px 40px;
+                padding-top: 70px;
+                background-color: $mainbgc;
+                border-radius: 30px;
+                box-shadow: 3px 3px 20px 7px rgb(245, 243, 243);
+                transition: top ease 0.4s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .text{
+                    // padding: 0px 40px;
+                    h1{
+                        font-size: 60px;
+                        font-weight: 600;
                     }
-                    .text{
-                        padding: 0px 40px;
-                        h1{
-                            font-size: 56px;
-                            font-weight: 600;
-                        }
-                        h3{
-                            margin: 35px 0px 40px 0px;
-                            font-size: 36px;
-                        }
-                        p{
-
-                        }
+                    h3{
+                        margin: 35px 0px 40px 0px;
+                        font-size: 36px;
                     }
-
+                    p{
+                        font-size: 18px;
+                    }
                 }
-
+            }
                 .feature:hover{
                     // top: -15px;
+                    transform: translateY(-15px);
                 }
-                .feature1, .feature2, .feature4, .feature5{
-                    background-color: $red;
-                    // margin-right: 20px;
-                    margin-bottom: 20px;
+            // .feature1, .feature2, .feature4, .feature5{
+            //     background-color: $red;
+            //     // margin-right: 20px;
+            //     margin-bottom: 20px;
 
+            // }
+            .feature1{
+                color: $white;
+                background-image: url(../images/training-images/curve1.png);
+                background-color: $red ;
+            }
+            .feature2{
+                background-image: url(../images/training-images/curve.svg);
+            }
+            .feature3{
+                background-image: url(../images/training-images/curve3.svg);
+            }
+            .feature4{
+                background-image: url(../images/training-images/curve4.svg);
+            }
+            .feature5{
+                background-image: url(../images/training-images/curve5.svg);
+                .text{
+                    p{
+                        font-size: 17px;
+                    }
                 }
-                .feature1{
-                    color: $white;
-
-                }
-
-
+            }
+            .feature6{
+                background-image: url(../images/training-images/curve6.svg);
             }
         }
     }
@@ -794,6 +814,35 @@ footer{
             }
         }
     }
+    
+    .section2{
+        .section2-container{
+            @include padding-lr(10px, 10px);
+           .top{
+                .text{
+                    margin-left: 30px;
+                    h6 {
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 30px;
+                    }
+                }
+                .image {
+                    img{
+                        width: 200px;
+                    }
+                }
+           }
+           .features{
+            width: 100%;
+                .feature{
+                    width: 46%;
+                   
+                }
+           }
+        }
+    }
 
     .section6{
         .section6-container{
@@ -919,6 +968,23 @@ footer{
         }
     }
 
+    .section2{
+        .section2-container{
+         .top{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            .text{
+                width: 90%;
+                p{
+                    width: 100%;
+                }
+            }
+         }   
+        }
+    }
+
     .section5{
         .section5-container{
             .text{
@@ -1013,6 +1079,30 @@ footer{
 
 
 @include tablet{
+    .section2{
+        .section2-container{
+            .top{
+                .text{
+                    h6 {
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                .image{
+                    display: none;
+                }
+            }   
+            .features{
+                .feature{
+                    width: 100%;
+                    justify-content: start;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
     .section5{
         .section5-container{
             padding-left: 15px;
@@ -1173,6 +1263,45 @@ footer{
         }
     }
 
+    .section2{
+        .section2-container{
+            .top{
+                .text{
+                    margin-left: 0;
+                    h6 {
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 24px;
+                        margin-bottom: 0;
+                    }
+                }
+                .image{
+                    display: none;
+                }
+            }   
+            .features{
+                .feature{
+                    width: 100%;
+                    justify-content: start;
+                    align-items: flex-start;
+                    margin-left: 0;
+                    margin-right: 0;
+                    .text{
+                        h1{
+                            font-size: 44px;
+                        }
+                        h3{
+                            font-size: 28px;
+                            margin-top: 25px;
+                            margin-bottom: 26px;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
     .section5{
         .section5-container{
             .text{
@@ -1304,6 +1433,35 @@ footer{
             }
         }
     }
+
+   .section2{
+    .section2-container{
+        @include padding-lr(5px, 5px);
+       .top{
+            .text{
+                width: 100%;
+                p{
+                    width: 100%;
+                }
+            }
+       }
+        .features{
+            .feature{
+                .text{
+                    h1{
+                        font-size: 44px;
+                    }
+                    h3{
+                        font-size: 28px;
+                        margin-top: 25px;
+                        margin-bottom: 26px;
+                    }
+                   
+                }
+            }
+        }
+    }
+   }
 
     .section5{
         .section5-container{
